@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CapaDatos.cs" />
+    <Compile Include="ProcedimientoActividades.cs" />
+    <Compile Include="ProcedimientoInscripciones.cs" />
     <Compile Include="ProcedimientoProfesores.cs" />
     <Compile Include="ProcedimientoSalones.cs" />
     <Compile Include="ProcedimientoSocios.cs" />

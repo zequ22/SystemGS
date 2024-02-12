@@ -20,15 +20,16 @@ namespace CapaNegocio
             table = procedureSal.mostrar();
             return table;
         }
-        public void insertProfe(string Nombre, int Capacidad, string Descripcion)
+
+        public void insertSalon(string Nombre, int Capacidad, string Descripcion)
         {
             procedureSal.Insert(Nombre, Capacidad, Descripcion);
         }
-        public void updateProfe(int Id, string Nombre, int Capacidad, string Descripcion)
+        public void updateSalon(int Id, string Nombre, int Capacidad, string Descripcion)
         {
             procedureSal.Update(Convert.ToInt32(Id), Nombre, Capacidad, Descripcion);
         }
-        public void deleteProfe(int Id)
+        public void deleteSalon(int Id)
         {
             procedureSal.Delete(Convert.ToInt32(Id));
         }

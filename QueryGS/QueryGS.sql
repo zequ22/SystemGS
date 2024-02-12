@@ -133,28 +133,101 @@ end
 
 
 --Actividades
-create table Avtividades(
+create table Actividades(
 cod_act int primary key identity(1,1),
 nombre_act varchar(50),
 hora int,
 cod_profe int foreign key references Profesores(cod_profe),
 cod_salon int foreign key references Salones(cod_salon))
+--Mostrar
+create procedure sp_MostrarAct
+as begin
+select * from Actividades
+end
+--Alta
+create procedure sp_AgregarAct
+@nombre_act varchar(50),
+@hora int,
+@cod_profe int,
+@cod_salon int
+as 
+begin
+insert into Actividades (nombre_act, hora, cod_profe, cod_salon)
+values (@nombre_act, @hora, @cod_profe, @cod_salon)
+end
+--Modificacion
+create procedure sp_ModificarAct
+@cod_act int,
+@nombre_act varchar(50),
+@hora int,
+@cod_profe int,
+@cod_salon int
+as 
+begin
+update Actividades set nombre_act = @nombre_act, hora = @hora, cod_profe = @cod_profe, cod_salon = @cod_salon
+where cod_act = @cod_act
+end
+--Baja
+create procedure sp_BajaActividad
+@cod_act int
+as 
+begin
+delete from Actividades where cod_act = @cod_act
+end
 
---Inscripciones
-create table Clase_Socio(
-primary key (cod_clase, cod_socio),
+
+--INSCRIPCIONES
+create table Inscripciones(
+cod_ins int primary key identity(1,1),
 cod_socio int foreign key references Socios(cod_socio),
-cod_clase int foreign key references Clases(cod_clase))
+cod_act int foreign key references Actividades(cod_act))
+--Mostrar
+create procedure sp_MostrarIns
+as begin
+select * from Inscripciones
+end
+--Alta
+create procedure sp_AgregarIns
+@cod_socio int,
+@cod_act int
+as 
+begin
+insert into Inscripciones (cod_socio, cod_act)
+values (@cod_socio, @cod_act)
+end
+--Modificacion
+create procedure sp_ModificarIns
+@cod_ins int,
+@cod_socio int,
+@cod_act int
+as 
+begin
+update Inscripciones set cod_socio = @cod_socio, cod_act = @cod_act
+where cod_ins = @cod_ins
+end
+--Baja
+create procedure sp_BajaIns
+@cod_ins int
+as 
+begin
+delete from Inscripciones where cod_ins = @cod_ins
+end
 
---Cuota
-create table Cuotas(
-cod_cuota int primary key identity(1,1),
-fecha_pago date,
-precio decimal)
 
---Pagos
-create table Cuota_Socio(
-primary key (cod_cuota, cod_cod_socio),
+--CUOTA
+CREATE TABLE Cuotas (
+mes_cuota VARCHAR(50),
+ano_cuota VARCHAR(50),
+cod_cuota AS (mes_cuota + '_' + ano_cuota) PERSISTED NOT NULL PRIMARY KEY,
+precio DECIMAL
+)
+INSERT INTO Cuotas (mes_cuota, ano_cuota, precio) VALUES ('Enero', '2024', 100.00);
+select * from Cuotas
+
+
+--PAGO
+create table Pagos(
+cod_pago int primary key identity(1,1),
 cod_cuota int foreign key references Cuotas(cod_cuota),
 cod_socio int foreign key references Socios(cod_socio),
 estado nvarchar(60))

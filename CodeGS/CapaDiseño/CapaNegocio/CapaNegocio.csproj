@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ctrActividades.cs" />
+    <Compile Include="ctrInscripciones.cs" />
     <Compile Include="ctrSalones.cs" />
     <Compile Include="ctrSocios.cs" />
     <Compile Include="ctrProfesores.cs" />
