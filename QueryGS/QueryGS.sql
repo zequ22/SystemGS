@@ -214,20 +214,48 @@ delete from Inscripciones where cod_ins = @cod_ins
 end
 
 
---CUOTA
-CREATE TABLE Cuotas (
-mes_cuota VARCHAR(50),
-ano_cuota VARCHAR(50),
-cod_cuota AS (mes_cuota + '_' + ano_cuota) PERSISTED NOT NULL PRIMARY KEY,
-precio DECIMAL
-)
-INSERT INTO Cuotas (mes_cuota, ano_cuota, precio) VALUES ('Enero', '2024', 100.00);
-select * from Cuotas
-
-
 --PAGO
-create table Pagos(
+create table Pagos (
 cod_pago int primary key identity(1,1),
-cod_cuota int foreign key references Cuotas(cod_cuota),
 cod_socio int foreign key references Socios(cod_socio),
-estado nvarchar(60))
+mes varchar(50),
+ano int,
+precio int,
+estado varchar(50))
+--Mostrar
+create procedure sp_MostrarPagos
+as begin
+select * from Pagos
+end
+--Alta
+create procedure sp_AgregarPago
+@cod_socio int,
+@mes varchar(50),
+@ano int,
+@precio int,
+@estado varchar(50)
+as 
+begin
+insert into Pagos (cod_socio, mes, ano, precio, estado)
+values (@cod_socio, @mes, @ano, @precio, @estado)
+end
+--Modificacion
+create procedure sp_ModificarPago
+@cod_pago int,
+@cod_socio int,
+@mes varchar(50),
+@ano int,
+@precio int,
+@estado varchar(50)
+as 
+begin
+update Pagos set cod_socio = @cod_socio, mes = @mes, ano = @ano, precio = @precio, estado = @estado
+where cod_pago = @cod_pago
+end
+--Baja
+create procedure sp_BajaPago
+@cod_pago int
+as 
+begin
+delete from Pagos where cod_pago = @cod_pago
+end

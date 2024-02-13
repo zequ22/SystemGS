@@ -16,7 +16,7 @@ namespace CapaDiseño
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formInscripciones());
+            Application.Run(new formPagos());
         }
     }
 }

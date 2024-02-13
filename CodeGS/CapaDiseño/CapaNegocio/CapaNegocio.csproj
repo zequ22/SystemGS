@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ctrActividades.cs" />
     <Compile Include="ctrInscripciones.cs" />
+    <Compile Include="ctrPagos.cs" />
     <Compile Include="ctrSalones.cs" />
     <Compile Include="ctrSocios.cs" />
     <Compile Include="ctrProfesores.cs" />

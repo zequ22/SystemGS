@@ -18,3 +18,4 @@ C:\Users\alder\Escritorio\AUD\CodeGS\CapaDiseño\CapaDiseño\obj\Debug\CapaDise�
 C:\Users\alder\Escritorio\AUD\CodeGS\CapaDiseño\CapaDiseño\obj\Debug\CapaDiseño.formSalones.resources
 C:\Users\alder\Escritorio\AUD\CodeGS\CapaDiseño\CapaDiseño\obj\Debug\CapaDiseño.formActividades.resources
 C:\Users\alder\Escritorio\AUD\CodeGS\CapaDiseño\CapaDiseño\obj\Debug\CapaDiseño.formInscripciones.resources
+C:\Users\alder\Escritorio\AUD\CodeGS\CapaDiseño\CapaDiseño\obj\Debug\CapaDiseño.formPagos.resources
