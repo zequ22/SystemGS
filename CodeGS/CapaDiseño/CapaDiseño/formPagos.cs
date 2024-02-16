@@ -105,5 +105,10 @@ namespace CapaDiseño
                 MessageBox.Show("Error al eliminar los datos!");
             }
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

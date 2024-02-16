@@ -103,5 +103,10 @@ namespace CapaDiseño
             txtDescripcion.Clear();
             txtCod.Clear();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

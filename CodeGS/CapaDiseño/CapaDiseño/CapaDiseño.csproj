@@ -52,6 +52,12 @@
     <Compile Include="formActividades.Designer.cs">
       <DependentUpon>formActividades.cs</DependentUpon>
     </Compile>
+    <Compile Include="formInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formInicio.Designer.cs">
+      <DependentUpon>formInicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="formInscripciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="formActividades.resx">
       <DependentUpon>formActividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formInicio.resx">
+      <DependentUpon>formInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formInscripciones.resx">
       <DependentUpon>formInscripciones.cs</DependentUpon>
