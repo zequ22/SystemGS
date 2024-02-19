@@ -17,6 +17,8 @@ namespace CapaDatos
         DataTable table = new DataTable();
         SqlCommand cmd = new SqlCommand();
 
+        
+
         //Mostrar datos
         public DataTable mostrar()
         {
@@ -71,6 +73,31 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@cod_socio", Id);
             cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
+        }
+
+        // Método para actualizar el estado de los socios
+        public void ActualizarEstadoSocios()
+        {
+            try
+            {
+                // Establecer la conexión
+                cmd.Connection = conexion.Abrir();
+
+                // Ejecutar el procedimiento almacenado
+                cmd.CommandText = "sp_ActualizarEstadoSocios";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                // Manejar cualquier excepción
+                throw new Exception("Error al actualizar el estado de los socios: " + ex.Message);
+            }
+            finally
+            {
+                // Cerrar la conexión
+                conexion.Cerrar();
+            }
         }
     }
 }

@@ -32,9 +32,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtAno = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtMes = new System.Windows.Forms.TextBox();
+            this.txtFecha = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCod = new System.Windows.Forms.TextBox();
@@ -51,7 +49,7 @@
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(545, 26);
+            this.txtEstado.Location = new System.Drawing.Point(439, 26);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(100, 20);
             this.txtEstado.TabIndex = 76;
@@ -61,7 +59,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(542, 10);
+            this.label7.Location = new System.Drawing.Point(436, 10);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(50, 13);
             this.label7.TabIndex = 75;
@@ -69,7 +67,7 @@
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(439, 26);
+            this.txtPrecio.Location = new System.Drawing.Point(333, 26);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(100, 20);
             this.txtPrecio.TabIndex = 74;
@@ -79,36 +77,18 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(436, 10);
+            this.label8.Location = new System.Drawing.Point(330, 10);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(47, 13);
             this.label8.TabIndex = 73;
             this.label8.Text = "Precio:";
             // 
-            // txtAno
+            // txtFecha
             // 
-            this.txtAno.Location = new System.Drawing.Point(227, 25);
-            this.txtAno.Name = "txtAno";
-            this.txtAno.Size = new System.Drawing.Size(100, 20);
-            this.txtAno.TabIndex = 72;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(224, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 13);
-            this.label3.TabIndex = 71;
-            this.label3.Text = "Año:";
-            // 
-            // txtMes
-            // 
-            this.txtMes.Location = new System.Drawing.Point(121, 24);
-            this.txtMes.Name = "txtMes";
-            this.txtMes.Size = new System.Drawing.Size(100, 20);
-            this.txtMes.TabIndex = 70;
+            this.txtFecha.Location = new System.Drawing.Point(121, 24);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(100, 20);
+            this.txtFecha.TabIndex = 70;
             // 
             // label4
             // 
@@ -117,16 +97,16 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(118, 8);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 13);
+            this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 69;
-            this.label4.Text = "Mes:";
+            this.label4.Text = "Fecha:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(330, 10);
+            this.label2.Location = new System.Drawing.Point(224, 10);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 13);
             this.label2.TabIndex = 67;
@@ -163,7 +143,7 @@
             // cmbSocios
             // 
             this.cmbSocios.FormattingEnabled = true;
-            this.cmbSocios.Location = new System.Drawing.Point(333, 25);
+            this.cmbSocios.Location = new System.Drawing.Point(227, 25);
             this.cmbSocios.Name = "cmbSocios";
             this.cmbSocios.Size = new System.Drawing.Size(100, 21);
             this.cmbSocios.TabIndex = 82;
@@ -253,9 +233,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtAno);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtMes);
+            this.Controls.Add(this.txtFecha);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCod);
@@ -277,9 +255,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtAno;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtMes;
+        private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCod;

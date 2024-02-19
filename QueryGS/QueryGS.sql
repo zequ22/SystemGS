@@ -186,7 +186,7 @@ create procedure sp_MostrarIns
 as begin
 select * from Inscripciones
 end
---Alta
+--Alta NUEVA VERSION EN QuerySP!!!
 create procedure sp_AgregarIns
 @cod_socio int,
 @cod_act int
@@ -218,8 +218,7 @@ end
 create table Pagos (
 cod_pago int primary key identity(1,1),
 cod_socio int foreign key references Socios(cod_socio),
-mes varchar(50),
-ano int,
+fecha date,
 precio int,
 estado varchar(50))
 --Mostrar
@@ -230,26 +229,24 @@ end
 --Alta
 create procedure sp_AgregarPago
 @cod_socio int,
-@mes varchar(50),
-@ano int,
+@fecha date,
 @precio int,
 @estado varchar(50)
 as 
 begin
-insert into Pagos (cod_socio, mes, ano, precio, estado)
-values (@cod_socio, @mes, @ano, @precio, @estado)
+insert into Pagos (cod_socio, fecha, precio, estado)
+values (@cod_socio, @fecha, @precio, @estado)
 end
 --Modificacion
 create procedure sp_ModificarPago
 @cod_pago int,
 @cod_socio int,
-@mes varchar(50),
-@ano int,
+@fecha date,
 @precio int,
 @estado varchar(50)
 as 
 begin
-update Pagos set cod_socio = @cod_socio, mes = @mes, ano = @ano, precio = @precio, estado = @estado
+update Pagos set cod_socio = @cod_socio, fecha = @fecha, precio = @precio, estado = @estado
 where cod_pago = @cod_pago
 end
 --Baja

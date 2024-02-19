@@ -32,5 +32,12 @@ namespace CapaNegocio
         {
             procedureSoc.Delete(Convert.ToInt32(Id));
         }
+
+        // Método para actualizar el estado de los socios
+        public void ActualizarEstadoSocios()
+        {
+            // Llamar al procedimiento almacenado de la capa de datos para actualizar el estado de los socios
+            procedureSoc.ActualizarEstadoSocios();
+        }
     }
 }

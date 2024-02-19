@@ -48,7 +48,7 @@ namespace CapaDiseño
             {
                 try
                 {
-                    prP.Insert(Convert.ToInt32(cmbSocios.SelectedValue), txtMes.Text, Convert.ToInt32(txtAno.Text), Convert.ToInt32(txtPrecio.Text), txtEstado.Text);
+                    prP.Insert(Convert.ToInt32(cmbSocios.SelectedValue), Convert.ToDateTime(txtFecha.Text), Convert.ToInt32(txtPrecio.Text), txtEstado.Text);
                     MessageBox.Show("Se agrego Pago con exito!");
                     MostrarDatos();
                 }
@@ -61,7 +61,7 @@ namespace CapaDiseño
             {
                 try
                 {
-                    prP.Update(Convert.ToInt32(id), Convert.ToInt32(cmbSocios.SelectedValue), txtMes.Text, Convert.ToInt32(txtAno.Text), Convert.ToInt32(txtPrecio.Text), txtEstado.Text);
+                    prP.Update(Convert.ToInt32(id), Convert.ToInt32(cmbSocios.SelectedValue), Convert.ToDateTime(txtFecha.Text), Convert.ToInt32(txtPrecio.Text), txtEstado.Text);
                     MessageBox.Show("Datos modificados con exito!");
                     MostrarDatos();
                     editar = false;
@@ -80,8 +80,7 @@ namespace CapaDiseño
                 editar = true;
                 id = dgvPagos.CurrentRow.Cells["cod_pago"].Value.ToString();
                 cmbSocios.SelectedValue = dgvPagos.CurrentRow.Cells["cod_socio"].Value.ToString();
-                txtMes.Text = dgvPagos.CurrentRow.Cells["mes"].Value.ToString();
-                txtAno.Text = dgvPagos.CurrentRow.Cells["ano"].Value.ToString();
+                txtFecha.Text = dgvPagos.CurrentRow.Cells["fecha"].Value.ToString();
                 txtPrecio.Text = dgvPagos.CurrentRow.Cells["precio"].Value.ToString();
                 txtEstado.Text = dgvPagos.CurrentRow.Cells["estado"].Value.ToString();
             }

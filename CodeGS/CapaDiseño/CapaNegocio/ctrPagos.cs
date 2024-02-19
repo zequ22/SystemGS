@@ -26,15 +26,15 @@ namespace CapaNegocio
             table = procedurePag.llenar_socios();
             return table;
         }
-        public void insertProfe(int Socio, string Mes, int Ano, int Precio, string Estado)
+        public void insertPago(int Socio, DateTime Fecha, int Precio, string Estado)
         {
-            procedurePag.Insert(Convert.ToInt32(Socio), Mes, Convert.ToInt32(Ano), Convert.ToInt32(Precio), Estado);
+            procedurePag.Insert(Convert.ToInt32(Socio), Fecha, Convert.ToInt32(Precio), Estado);
         }
-        public void updateProfe(int Id, int Socio, string Mes, int Ano, int Precio, string Estado)
+        public void updatePago(int Id, int Socio, DateTime Fecha, int Precio, string Estado)
         {
-            procedurePag.Update(Convert.ToInt32(Id), Convert.ToInt32(Socio), Mes, Convert.ToInt32(Ano), Convert.ToInt32(Precio), Estado);
+            procedurePag.Update(Convert.ToInt32(Id), Convert.ToInt32(Socio), Fecha, Convert.ToInt32(Precio), Estado);
         }
-        public void deleteProfe(int Id)
+        public void deletePago(int Id)
         {
             procedurePag.Delete(Convert.ToInt32(Id));
         }

@@ -57,5 +57,10 @@ namespace CapaDiseño
             formSalones formuSalones = new formSalones();
             formuSalones.Show();
         }
+
+        private void formInicio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

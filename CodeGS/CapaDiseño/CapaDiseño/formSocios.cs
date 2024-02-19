@@ -1,4 +1,5 @@
 ﻿using CapaDatos;
+using CapaNegocio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,9 @@ namespace CapaDiseño
 {
     public partial class formSocios : Form
     {
+        // Declarar un temporizador
+        private System.Windows.Forms.Timer timer;
+
         //Nueva instancia
         ProcedimientoSocios prS = new ProcedimientoSocios();
         private string id = null;
@@ -21,6 +25,12 @@ namespace CapaDiseño
         public formSocios()
         {
             InitializeComponent();
+
+            // Configurar el temporizador para que se ejecute cada hora
+            timer = new System.Windows.Forms.Timer();
+            timer.Interval = 10000;
+            timer.Tick += timerEstado_Tick;
+            timer.Start();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -112,6 +122,24 @@ namespace CapaDiseño
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void timerEstado_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                ctrSocios controladorSocios = new ctrSocios();
+
+                // Llamar al método de la capa de negocio para actualizar el estado de los socios
+                controladorSocios.ActualizarEstadoSocios();
+                lblEstado.Text = "OK";
+                MostrarDatos();
+            }
+            catch (Exception ex)
+            {
+                // Manejar cualquier excepción
+                MessageBox.Show("Error al actualizar el estado de los socios: " + ex.Message);
+            }
         }
     }
 }

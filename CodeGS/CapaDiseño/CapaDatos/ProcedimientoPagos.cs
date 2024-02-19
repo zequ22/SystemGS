@@ -41,14 +41,13 @@ namespace CapaDatos
         }
 
         //Alta
-        public void Insert(int Socio, string Mes, int Ano, int Precio, string Estado)
+        public void Insert(int Socio, DateTime Fecha, int Precio, string Estado)
         {
             cmd.Connection = conexion.Abrir();
             cmd.CommandText = "sp_AgregarPago";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@cod_soc", Socio);
-            cmd.Parameters.AddWithValue("@mes", Mes);
-            cmd.Parameters.AddWithValue("@ano", Ano);
+            cmd.Parameters.AddWithValue("@cod_socio", Socio);
+            cmd.Parameters.AddWithValue("@fecha", Fecha);
             cmd.Parameters.AddWithValue("@precio", Precio);
             cmd.Parameters.AddWithValue("@estado", Estado);
             cmd.ExecuteNonQuery();
@@ -56,15 +55,14 @@ namespace CapaDatos
         }
 
         //Modificar
-        public void Update(int Id, int Socio, string Mes, int Ano, int Precio, string Estado)
+        public void Update(int Id, int Socio, DateTime Fecha, int Precio, string Estado)
         {
             cmd.Connection = conexion.Abrir();
             cmd.CommandText = "sp_ModificarPago";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@cod_pago", Id);
             cmd.Parameters.AddWithValue("@cod_soc", Socio);
-            cmd.Parameters.AddWithValue("@mes", Mes);
-            cmd.Parameters.AddWithValue("@ano", Ano);
+            cmd.Parameters.AddWithValue("@fecha", Fecha);
             cmd.Parameters.AddWithValue("@precio", Precio);
             cmd.Parameters.AddWithValue("@estado", Estado);
             cmd.ExecuteNonQuery();

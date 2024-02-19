@@ -152,6 +152,7 @@
             this.Name = "formInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GS";
+            this.Load += new System.EventHandler(this.formInicio_Load);
             this.ResumeLayout(false);
 
         }

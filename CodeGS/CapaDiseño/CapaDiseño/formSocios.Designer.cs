@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -48,6 +49,8 @@
             this.txtCod = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvSocios = new System.Windows.Forms.DataGridView();
+            this.timerEstado = new System.Windows.Forms.Timer(this.components);
+            this.lblEstado = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSocios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,6 +128,7 @@
             // 
             this.txtEstado.Location = new System.Drawing.Point(581, 68);
             this.txtEstado.Name = "txtEstado";
+            this.txtEstado.ReadOnly = true;
             this.txtEstado.Size = new System.Drawing.Size(100, 20);
             this.txtEstado.TabIndex = 38;
             // 
@@ -257,12 +261,28 @@
             this.dgvSocios.Size = new System.Drawing.Size(669, 233);
             this.dgvSocios.TabIndex = 22;
             // 
+            // timerEstado
+            // 
+            this.timerEstado.Tick += new System.EventHandler(this.timerEstado_Tick);
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.ForeColor = System.Drawing.Color.White;
+            this.lblEstado.Location = new System.Drawing.Point(662, 9);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(19, 13);
+            this.lblEstado.TabIndex = 44;
+            this.lblEstado.Text = "...";
+            // 
             // formSocios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(696, 367);
+            this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnEliminar);
@@ -316,6 +336,8 @@
         private System.Windows.Forms.TextBox txtCod;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvSocios;
+        private System.Windows.Forms.Timer timerEstado;
+        private System.Windows.Forms.Label lblEstado;
     }
 }
 
