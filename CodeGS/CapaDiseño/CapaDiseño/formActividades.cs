@@ -1,4 +1,5 @@
 ﻿using CapaDatos;
+using CapaNegocio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,8 @@ namespace CapaDiseño
 {
     public partial class formActividades : Form
     {
+        private System.Windows.Forms.Timer timer;
+
         //Nueva instancia
         ProcedimientoActividades prA = new ProcedimientoActividades();
         private string id = null;
@@ -21,6 +24,11 @@ namespace CapaDiseño
         public formActividades()
         {
             InitializeComponent();
+
+            timer = new System.Windows.Forms.Timer();
+            timer.Interval = 10000;
+            timer.Tick += timerEstAct_Tick;
+            timer.Start();
         }
 
         private void formActividades_Load(object sender, EventArgs e)
@@ -129,6 +137,24 @@ namespace CapaDiseño
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void timerEstAct_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                ctrActividades controladorAct = new ctrActividades();
+
+                // Llamar al método de la capa de negocio para actualizar el estado de los socios
+                controladorAct.ActualizarEstadoAct();
+                lblEstado.Text = "OK";
+                MostrarDatos();
+            }
+            catch (Exception ex)
+            {
+                // Manejar cualquier excepción
+                MessageBox.Show("Error al actualizar el estado de las actividades: " + ex.Message);
+            }
         }
     }
 }

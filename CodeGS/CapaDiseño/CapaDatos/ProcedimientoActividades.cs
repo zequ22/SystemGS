@@ -77,7 +77,8 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@hora", Hora);
             cmd.Parameters.AddWithValue("@cod_profe", Profe);
             cmd.Parameters.AddWithValue("@cod_salon", Salon);
-            // No es necesario pasar valores para estado y cant_ins ya que no se modifican en este método
+            cmd.Parameters.AddWithValue("@cant_ins", Cantidad); // Agregar parámetro para la cantidad de inscritos
+            cmd.Parameters.AddWithValue("@estado", Estado); // Agregar parámetro para el estado
             cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
         }
@@ -91,6 +92,41 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@cod_act", Id);
             cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
+        }
+
+        public int ObtenerCantidadInscritos(int IdActividad)
+        {
+            int cantidadInscritos = 0;
+            cmd.Connection = conexion.Abrir();
+            cmd.CommandText = "SELECT COUNT(*) FROM Inscripciones WHERE cod_act = @cod_act";
+            cmd.Parameters.AddWithValue("@cod_act", IdActividad);
+            cantidadInscritos = (int)cmd.ExecuteScalar();
+            conexion.Cerrar();
+            return cantidadInscritos;
+        }
+
+        public void ActualizarEstadoAct()
+        {
+            try
+            {
+                // Establecer la conexión
+                cmd.Connection = conexion.Abrir();
+
+                // Ejecutar el procedimiento almacenado
+                cmd.CommandText = "sp_ActualizarEstadoActividad";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                // Manejar cualquier excepción
+                throw new Exception("Error al actualizar el estado de las actividades: " + ex.Message);
+            }
+            finally
+            {
+                // Cerrar la conexión
+                conexion.Cerrar();
+            }
         }
     }
 }
