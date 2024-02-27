@@ -47,5 +47,6 @@ namespace CapaNegocio
         {
             procedureIns.Delete(Convert.ToInt32(Id));
         }
+
     }
 }

@@ -139,6 +139,10 @@ nombre_act varchar(50),
 hora int,
 cod_profe int foreign key references Profesores(cod_profe),
 cod_salon int foreign key references Salones(cod_salon))
+--MOD
+ALTER TABLE Actividades
+ADD cant_ins INT DEFAULT 0,
+    estado VARCHAR(50);
 --Mostrar
 create procedure sp_MostrarAct
 as begin
@@ -156,17 +160,22 @@ insert into Actividades (nombre_act, hora, cod_profe, cod_salon)
 values (@nombre_act, @hora, @cod_profe, @cod_salon)
 end
 --Modificacion
-create procedure sp_ModificarAct
+CREATE PROCEDURE sp_ModificarAct
 @cod_act int,
 @nombre_act varchar(50),
 @hora int,
 @cod_profe int,
 @cod_salon int
-as 
-begin
-update Actividades set nombre_act = @nombre_act, hora = @hora, cod_profe = @cod_profe, cod_salon = @cod_salon
-where cod_act = @cod_act
-end
+AS 
+BEGIN
+    DECLARE @cant_ins int;
+    SELECT @cant_ins = COUNT(*) FROM Inscripciones WHERE cod_act = @cod_act;
+
+    IF @cant_ins >= 15
+        UPDATE Actividades SET nombre_act = @nombre_act, hora = @hora, cod_profe = @cod_profe, cod_salon = @cod_salon, estado = 'ACTIVA' WHERE cod_act = @cod_act;
+    ELSE
+        UPDATE Actividades SET nombre_act = @nombre_act, hora = @hora, cod_profe = @cod_profe, cod_salon = @cod_salon, estado = 'CERRADA' WHERE cod_act = @cod_act;
+END
 --Baja
 create procedure sp_BajaActividad
 @cod_act int
@@ -186,15 +195,20 @@ create procedure sp_MostrarIns
 as begin
 select * from Inscripciones
 end
---Alta NUEVA VERSION EN QuerySP!!!
-create procedure sp_AgregarIns
-@cod_socio int,
-@cod_act int
-as 
-begin
-insert into Inscripciones (cod_socio, cod_act)
-values (@cod_socio, @cod_act)
-end
+--Alta
+CREATE PROCEDURE sp_AgregarIns
+@cod_socio INT,
+@cod_act INT
+AS
+BEGIN
+    INSERT INTO Inscripciones (cod_socio, cod_act)
+    VALUES (@cod_socio, @cod_act);
+
+    -- Incrementar el valor de cant_ins en la tabla de Actividades
+    UPDATE Actividades
+    SET cant_ins = cant_ins + 1
+    WHERE cod_act = @cod_act;
+END
 --Modificacion
 create procedure sp_ModificarIns
 @cod_ins int,
@@ -206,12 +220,23 @@ update Inscripciones set cod_socio = @cod_socio, cod_act = @cod_act
 where cod_ins = @cod_ins
 end
 --Baja
-create procedure sp_BajaIns
-@cod_ins int
-as 
-begin
-delete from Inscripciones where cod_ins = @cod_ins
-end
+CREATE PROCEDURE sp_BajaIns
+@cod_ins INT
+AS
+BEGIN
+    DECLARE @cod_act INT;
+
+    -- Obtener el código de la actividad antes de eliminar la inscripción
+    SELECT @cod_act = cod_act FROM Inscripciones WHERE cod_ins = @cod_ins;
+
+    -- Eliminar la inscripción
+    DELETE FROM Inscripciones WHERE cod_ins = @cod_ins;
+
+    -- Decrementar el valor de cant_ins en la tabla de Actividades
+    UPDATE Actividades
+    SET cant_ins = cant_ins - 1
+    WHERE cod_act = @cod_act;
+END
 
 
 --PAGO

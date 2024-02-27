@@ -82,6 +82,7 @@ namespace CapaDiseño
                     MessageBox.Show("Error al ingresar datos!" + ex);
                 }
             }
+
         }
 
         private void btnModificar_Click(object sender, EventArgs e)

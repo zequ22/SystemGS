@@ -46,6 +46,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cmbProfe = new System.Windows.Forms.ComboBox();
             this.cmbSalones = new System.Windows.Forms.ComboBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCantIns = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAct)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +59,7 @@
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiar.Location = new System.Drawing.Point(420, 290);
+            this.btnLimpiar.Location = new System.Drawing.Point(419, 329);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(129, 23);
             this.btnLimpiar.TabIndex = 97;
@@ -69,7 +73,7 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(555, 290);
+            this.btnSalir.Location = new System.Drawing.Point(554, 329);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(129, 23);
             this.btnSalir.TabIndex = 96;
@@ -83,7 +87,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(285, 290);
+            this.btnEliminar.Location = new System.Drawing.Point(284, 329);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(129, 23);
             this.btnEliminar.TabIndex = 95;
@@ -97,7 +101,7 @@
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.Color.White;
-            this.btnModificar.Location = new System.Drawing.Point(150, 290);
+            this.btnModificar.Location = new System.Drawing.Point(149, 329);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(129, 23);
             this.btnModificar.TabIndex = 94;
@@ -111,7 +115,7 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
-            this.btnAgregar.Location = new System.Drawing.Point(15, 290);
+            this.btnAgregar.Location = new System.Drawing.Point(14, 329);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(129, 23);
             this.btnAgregar.TabIndex = 93;
@@ -209,7 +213,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvAct.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvAct.Location = new System.Drawing.Point(15, 51);
+            this.dgvAct.Location = new System.Drawing.Point(14, 90);
             this.dgvAct.Name = "dgvAct";
             this.dgvAct.Size = new System.Drawing.Size(669, 233);
             this.dgvAct.TabIndex = 84;
@@ -242,12 +246,54 @@
             this.cmbSalones.Size = new System.Drawing.Size(100, 21);
             this.cmbSalones.TabIndex = 100;
             // 
+            // txtEstado
+            // 
+            this.txtEstado.Location = new System.Drawing.Point(121, 64);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(100, 20);
+            this.txtEstado.TabIndex = 104;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Teal;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(118, 48);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 13);
+            this.label5.TabIndex = 103;
+            this.label5.Text = "Estado:";
+            // 
+            // txtCantIns
+            // 
+            this.txtCantIns.Location = new System.Drawing.Point(15, 64);
+            this.txtCantIns.Name = "txtCantIns";
+            this.txtCantIns.Size = new System.Drawing.Size(100, 20);
+            this.txtCantIns.TabIndex = 102;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Teal;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(12, 48);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(66, 13);
+            this.label6.TabIndex = 101;
+            this.label6.Text = "Inscriptos:";
+            // 
             // formActividades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(695, 323);
+            this.ClientSize = new System.Drawing.Size(695, 363);
+            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtCantIns);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.cmbSalones);
             this.Controls.Add(this.cmbProfe);
             this.Controls.Add(this.label4);
@@ -295,5 +341,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbProfe;
         private System.Windows.Forms.ComboBox cmbSalones;
+        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtCantIns;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -14,3 +14,27 @@ BEGIN
                     ELSE 'ACTIVO'
                  END;
 END;
+
+--VALIDAR ESTADO PARA INSCRIPCION
+CREATE PROCEDURE sp_AgregarIns
+@cod_socio int,
+@cod_act int
+AS 
+BEGIN
+    DECLARE @estado_socio VARCHAR(50)
+    
+    -- Obtener el estado del socio
+    SELECT @estado_socio = estado FROM Socios WHERE cod_socio = @cod_socio
+    
+    -- Verificar si el estado del socio es "DEUDOR"
+    IF @estado_socio = 'DEUDOR'
+    BEGIN
+        PRINT 'El socio tiene estado deudor y no puede inscribirse en una actividad.'
+    END
+    ELSE
+    BEGIN
+        -- Insertar la inscripción
+        INSERT INTO Inscripciones (cod_socio, cod_act) VALUES (@cod_socio, @cod_act)
+        PRINT 'Se agrego Inscripcion con exito!'
+    END
+END;

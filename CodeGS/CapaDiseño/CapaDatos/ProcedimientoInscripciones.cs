@@ -63,6 +63,7 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@cod_act", Act);
             cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
+
         }
 
         //Modificar

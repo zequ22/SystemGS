@@ -58,7 +58,7 @@ namespace CapaDiseño
             {
                 try
                 {
-                    prA.Insert(txtNombre.Text, Convert.ToInt32(txtHora.Text), Convert.ToInt32(cmbProfe.SelectedValue), Convert.ToInt32(cmbSalones.SelectedValue));
+                    prA.Insert(txtNombre.Text, Convert.ToInt32(txtHora.Text), Convert.ToInt32(cmbProfe.SelectedValue), Convert.ToInt32(cmbSalones.SelectedValue), txtEstado.Text);
                     MessageBox.Show("Se agrego Actividad con exito!");
                     MostrarDatos();
                 }
@@ -71,7 +71,7 @@ namespace CapaDiseño
             {
                 try
                 {
-                    prA.Update(Convert.ToInt32(id), txtNombre.Text, Convert.ToInt32(txtHora.Text), Convert.ToInt32(cmbProfe.SelectedValue), Convert.ToInt32(cmbSalones.SelectedValue));
+                    prA.Update(Convert.ToInt32(id), txtNombre.Text, Convert.ToInt32(txtHora.Text), Convert.ToInt32(cmbProfe.SelectedValue), Convert.ToInt32(cmbSalones.SelectedValue), Convert.ToInt32(txtCantIns.Text), txtEstado.Text);
                     MessageBox.Show("Datos modificados con exito!");
                     MostrarDatos();
                     editar = false;
@@ -93,6 +93,8 @@ namespace CapaDiseño
                 txtHora.Text = dgvAct.CurrentRow.Cells["hora"].Value.ToString();
                 cmbProfe.SelectedValue = dgvAct.CurrentRow.Cells["cod_profe"].Value.ToString();
                 cmbSalones.SelectedValue = dgvAct.CurrentRow.Cells["cod_salon"].Value.ToString();
+                txtCantIns.Text = dgvAct.CurrentRow.Cells["cant_ins"].Value.ToString();
+                txtEstado.Text = dgvAct.CurrentRow.Cells["estado"].Value.ToString();
             }
             else
             {
@@ -120,6 +122,8 @@ namespace CapaDiseño
             txtCod.Clear();
             txtNombre.Clear();
             txtHora.Clear();
+            txtCantIns.Clear();
+            txtEstado.Clear();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

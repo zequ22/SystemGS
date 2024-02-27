@@ -52,7 +52,7 @@ namespace CapaDatos
         }
 
         //Alta
-        public void Insert(string Nombre, int Hora, int Profe, int Salon)
+        public void Insert(string Nombre, int Hora, int Profe, int Salon, string Estado)
         {
             cmd.Connection = conexion.Abrir();
             cmd.CommandText = "sp_AgregarAct";
@@ -61,12 +61,13 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@hora", Hora);
             cmd.Parameters.AddWithValue("@cod_profe", Profe);
             cmd.Parameters.AddWithValue("@cod_salon", Salon);
+            // No es necesario pasar valores para estado y cant_ins ya que tienen valores predeterminados o son nulos
             cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
         }
 
         //Modificar
-        public void Update(int Id, string Nombre, int Hora, int Profe, int Salon)
+        public void Update(int Id, string Nombre, int Hora, int Profe, int Salon, int Cantidad, string Estado)
         {
             cmd.Connection = conexion.Abrir();
             cmd.CommandText = "sp_ModificarAct";
@@ -76,6 +77,7 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@hora", Hora);
             cmd.Parameters.AddWithValue("@cod_profe", Profe);
             cmd.Parameters.AddWithValue("@cod_salon", Salon);
+            // No es necesario pasar valores para estado y cant_ins ya que no se modifican en este método
             cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
         }
@@ -84,7 +86,7 @@ namespace CapaDatos
         public void Delete(int Id)
         {
             cmd.Connection = conexion.Abrir();
-            cmd.CommandText = "sp_BajaAct";
+            cmd.CommandText = "sp_BajaActividad";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@cod_act", Id);
             cmd.ExecuteNonQuery();
