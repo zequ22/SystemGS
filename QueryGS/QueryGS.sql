@@ -15,7 +15,8 @@ estado varchar(50))
 --Mostrar
 create procedure sp_MostrarSocios
 as begin
-select * from Socios
+select cod_socio, apellido_soc, nombre_soc, tipo_nro_doc, estado, nacimiento, tel from Socios
+order by apellido_soc, nombre_soc, tipo_nro_doc
 end
 --Alta
 create procedure sp_AgregarSocio
@@ -61,7 +62,8 @@ cargo varchar(50))
 --Mostrar
 create procedure sp_MostrarProfesores
 as begin
-select * from Profesores
+select cod_profe, apellido_profe, nombre_profe, tipo_nro_doc, cargo, nacimiento,tel from Profesores
+order by apellido_profe,nombre_profe,tipo_nro_doc
 end
 --Alta
 create procedure sp_AgregarProfesor
@@ -144,10 +146,14 @@ ALTER TABLE Actividades
 ADD cant_ins INT DEFAULT 0,
     estado VARCHAR(50);
 --Mostrar
-create procedure sp_MostrarAct
-as begin
-select * from Actividades
-end
+create PROCEDURE sp_MostrarAct
+AS 
+BEGIN
+    SELECT A.cod_act, A.nombre_act, A.hora, A.cant_ins, A.estado, A.cod_profe, P.nombre_profe, A.cod_salon, S.nombre_salon 
+    FROM Actividades A
+    INNER JOIN Profesores P ON A.cod_profe = P.cod_profe
+    INNER JOIN Salones S ON A.cod_salon = S.cod_salon;
+END;
 --Alta
 create procedure sp_AgregarAct
 @nombre_act varchar(50),
@@ -191,23 +197,37 @@ cod_ins int primary key identity(1,1),
 cod_socio int foreign key references Socios(cod_socio),
 cod_act int foreign key references Actividades(cod_act))
 --Mostrar
-create procedure sp_MostrarIns
-as begin
-select * from Inscripciones
-end
+CREATE PROCEDURE sp_MostrarIns
+AS 
+BEGIN
+    SELECT I.cod_socio, S.apellido_soc, S.nombre_soc, I.cod_act, A.nombre_act, I.cod_ins 
+    FROM Inscripciones I
+    INNER JOIN Actividades A ON I.cod_act = A.cod_act
+    INNER JOIN Socios S ON I.cod_socio = S.cod_socio;
+END;
 --Alta
-CREATE PROCEDURE sp_AgregarIns
-@cod_socio INT,
-@cod_act INT
+create PROCEDURE sp_AgregarIns
+    @cod_socio INT,
+    @cod_act INT
 AS
 BEGIN
-    INSERT INTO Inscripciones (cod_socio, cod_act)
-    VALUES (@cod_socio, @cod_act);
+    -- Verificar si ya existe una inscripción para el mismo socio y actividad
+    IF NOT EXISTS (SELECT 1 FROM Inscripciones WHERE cod_socio = @cod_socio AND cod_act = @cod_act)
+    BEGIN
+        -- No existe una inscripción previa, proceder con la inserción
+        INSERT INTO Inscripciones (cod_socio, cod_act)
+        VALUES (@cod_socio, @cod_act);
 
-    -- Incrementar el valor de cant_ins en la tabla de Actividades
-    UPDATE Actividades
-    SET cant_ins = cant_ins + 1
-    WHERE cod_act = @cod_act;
+        -- Incrementar el valor de cant_ins en la tabla de Actividades
+        UPDATE Actividades
+        SET cant_ins = cant_ins + 1
+        WHERE cod_act = @cod_act;
+    END
+    ELSE
+    BEGIN
+        -- Ya existe una inscripción para el mismo socio y actividad, mostrar un mensaje indicando que no se puede realizar la inserción
+        RAISERROR ('Ya existe una inscripción para este socio y actividad.', 16, 1);
+    END
 END
 --Modificacion
 create procedure sp_ModificarIns
@@ -247,10 +267,14 @@ fecha date,
 precio int,
 estado varchar(50))
 --Mostrar
-create procedure sp_MostrarPagos
-as begin
-select * from Pagos
-end
+create PROCEDURE sp_MostrarPagos
+AS 
+BEGIN
+    SELECT P.fecha, P.cod_socio, S.apellido_soc, S.nombre_soc, S.tipo_nro_doc, P.estado, P.precio 
+    FROM Pagos P
+    INNER JOIN Socios S ON P.cod_socio = S.cod_socio
+    ORDER BY P.fecha, S.apellido_soc, S.nombre_soc, S.tipo_nro_doc;
+END;
 --Alta
 create procedure sp_AgregarPago
 @cod_socio int,

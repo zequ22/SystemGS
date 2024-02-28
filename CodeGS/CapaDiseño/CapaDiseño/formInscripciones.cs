@@ -65,7 +65,7 @@ namespace CapaDiseño
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error al ingresar datos!" + ex);
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             if (editar == true)
@@ -79,7 +79,7 @@ namespace CapaDiseño
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error al ingresar datos!" + ex);
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
 
