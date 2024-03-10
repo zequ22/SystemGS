@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="CapaDatos.cs" />
     <Compile Include="Cd_Permiso.cs" />
+    <Compile Include="Cd_Rol.cs" />
     <Compile Include="Cd_Usuario.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Permiso.cs" />

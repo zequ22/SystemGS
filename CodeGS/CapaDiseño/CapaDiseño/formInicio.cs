@@ -27,48 +27,12 @@ namespace CapaDiseño
             InitializeComponent();
         }
 
-        private void btnSocios_Click(object sender, EventArgs e)
-        {
-            formSocios formuSocios = new formSocios();
-            formuSocios.Show();
-        }
-
         private void btnSalir_Click(object sender, EventArgs e)
         {
             //formLogin formLogin = new formLogin();
             //formLogin.Show();
             //this.Hide();
             this.Close();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            formPagos formuPagos = new formPagos();
-            formuPagos.Show();
-        }
-
-        private void btnInscripciones_Click(object sender, EventArgs e)
-        {
-            formInscripciones formuInscripciones = new formInscripciones();
-            formuInscripciones.Show();
-        }
-
-        private void btnActividades_Click(object sender, EventArgs e)
-        {
-            formActividades formuActividades = new formActividades();
-            formuActividades.Show();
-        }
-
-        private void btnProfesores_Click(object sender, EventArgs e)
-        {
-            formProfesores formuProfesores = new formProfesores();
-            formuProfesores.Show();
-        }
-
-        private void btnSalones_Click(object sender, EventArgs e)
-        {
-            formSalones formuSalones = new formSalones();
-            formuSalones.Show();
         }
 
         private void formInicio_Load(object sender, EventArgs e)
@@ -86,18 +50,6 @@ namespace CapaDiseño
             }
 
             lblUsuario.Text = usuarioActual.nombre_usuario;
-        }
-
-        private string ObtenerNombreFormulario(string nombreBoton)
-        {
-            // Devolver el nombre del botón tal cual
-            return nombreBoton;
-        }
-
-        private void btn_Usuarios_Click(object sender, EventArgs e)
-        {
-            formUsuarios formuUsuarios = new formUsuarios();
-            formuUsuarios.Show();
         }
 
         private void AbrirFormulario(IconMenuItem menu, Form formulario)
@@ -162,6 +114,11 @@ namespace CapaDiseño
         private void menuSalones_Click(object sender, EventArgs e)
         {
             AbrirFormulario((IconMenuItem)sender, new formSalones());
+        }
+
+        private void menu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }
