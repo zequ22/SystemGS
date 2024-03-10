@@ -80,11 +80,6 @@ namespace CapaDiseño
             AbrirFormulario((IconMenuItem)sender, new formUsuarios());
         }
 
-        private void menuReportes_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario((IconMenuItem)sender, new formReportes());
-        }
-
         private void menuSocios_Click(object sender, EventArgs e)
         {
             AbrirFormulario((IconMenuItem)sender, new formSocios());
@@ -116,9 +111,14 @@ namespace CapaDiseño
             AbrirFormulario((IconMenuItem)sender, new formSalones());
         }
 
-        private void menu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void submenuRepSocios_Click(object sender, EventArgs e)
         {
+            AbrirFormulario(menuReportes, new formReporteSocios());
+        }
 
+        private void submenuRepActividades_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menuReportes, new formReporteActividades());
         }
     }
 }

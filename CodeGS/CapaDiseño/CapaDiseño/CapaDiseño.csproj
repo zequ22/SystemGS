@@ -89,11 +89,23 @@
     <Compile Include="formProfesores.Designer.cs">
       <DependentUpon>formProfesores.cs</DependentUpon>
     </Compile>
+    <Compile Include="formReporteActividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formReporteActividades.Designer.cs">
+      <DependentUpon>formReporteActividades.cs</DependentUpon>
+    </Compile>
     <Compile Include="formReportes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formReportes.Designer.cs">
       <DependentUpon>formReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formReporteSocios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formReporteSocios.Designer.cs">
+      <DependentUpon>formReporteSocios.cs</DependentUpon>
     </Compile>
     <Compile Include="formSalones.cs">
       <SubType>Form</SubType>

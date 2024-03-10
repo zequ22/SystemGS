@@ -43,8 +43,10 @@
             this.menuTitulo = new System.Windows.Forms.MenuStrip();
             this.title = new System.Windows.Forms.Label();
             this.contenedor = new System.Windows.Forms.Panel();
+            this.submenuRepSocios = new System.Windows.Forms.ToolStripMenuItem();
+            this.submenuRepActividades = new System.Windows.Forms.ToolStripMenuItem();
             this.menu.SuspendLayout();
-
+            this.SuspendLayout();
             // 
             // btnSalir
             // 
@@ -96,10 +98,9 @@
             this.menuSalones});
             this.menu.Location = new System.Drawing.Point(0, 62);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(968, 24);
+            this.menu.Size = new System.Drawing.Size(968, 77);
             this.menu.TabIndex = 11;
             this.menu.Text = "menuStrip1";
-            this.menu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menu_ItemClicked);
             // 
             // menuUsuarios
             // 
@@ -120,6 +121,9 @@
             // menuReportes
             // 
             this.menuReportes.BackColor = System.Drawing.Color.White;
+            this.menuReportes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.submenuRepSocios,
+            this.submenuRepActividades});
             this.menuReportes.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.menuReportes.IconChar = FontAwesome.Sharp.IconChar.ChartSimple;
             this.menuReportes.IconColor = System.Drawing.Color.Black;
@@ -131,7 +135,6 @@
             this.menuReportes.Size = new System.Drawing.Size(75, 73);
             this.menuReportes.Text = "Reportes";
             this.menuReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menuReportes.Click += new System.EventHandler(this.menuReportes_Click);
             // 
             // menuSocios
             // 
@@ -258,6 +261,20 @@
             this.contenedor.Size = new System.Drawing.Size(956, 474);
             this.contenedor.TabIndex = 14;
             // 
+            // submenuRepSocios
+            // 
+            this.submenuRepSocios.Name = "submenuRepSocios";
+            this.submenuRepSocios.Size = new System.Drawing.Size(199, 24);
+            this.submenuRepSocios.Text = "Reporte Socios";
+            this.submenuRepSocios.Click += new System.EventHandler(this.submenuRepSocios_Click);
+            // 
+            // submenuRepActividades
+            // 
+            this.submenuRepActividades.Name = "submenuRepActividades";
+            this.submenuRepActividades.Size = new System.Drawing.Size(199, 24);
+            this.submenuRepActividades.Text = "Reporte Actividades";
+            this.submenuRepActividades.Click += new System.EventHandler(this.submenuRepActividades_Click);
+            // 
             // formInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -279,6 +296,8 @@
             this.Load += new System.EventHandler(this.formInicio_Load);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -297,6 +316,8 @@
         private FontAwesome.Sharp.IconMenuItem menuSalones;
         private System.Windows.Forms.MenuStrip menuTitulo;
         private System.Windows.Forms.Label title;
-        private System.Windows.Forms.Panel contenedor;        
+        private System.Windows.Forms.Panel contenedor;
+        private System.Windows.Forms.ToolStripMenuItem submenuRepSocios;
+        private System.Windows.Forms.ToolStripMenuItem submenuRepActividades;
     }
 }
