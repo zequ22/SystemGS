@@ -81,3 +81,7 @@ BEGIN
 END;
 
 exec sp_MostrarInfoActividades
+
+--PRUEBA
+ALTER TABLE Actividades
+ALTER COLUMN hora TIME;

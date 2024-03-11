@@ -52,7 +52,7 @@ namespace CapaDatos
         }
 
         //Alta
-        public void Insert(string Nombre, int Hora, int Profe, int Salon, string Estado)
+        public void Insert(string Nombre, TimeSpan Hora, int Profe, int Salon, string Estado)
         {
             cmd.Connection = conexion.Abrir();
             cmd.CommandText = "sp_AgregarAct";
@@ -67,7 +67,7 @@ namespace CapaDatos
         }
 
         //Modificar
-        public void Update(int Id, string Nombre, int Hora, int Profe, int Salon, int Cantidad, string Estado)
+        public void Update(int Id, string Nombre, TimeSpan Hora, int Profe, int Salon, int Cantidad, string Estado)
         {
             cmd.Connection = conexion.Abrir();
             cmd.CommandText = "sp_ModificarAct";

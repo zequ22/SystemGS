@@ -135,11 +135,11 @@ end
 
 
 --Actividades
-drop table Actividades
+DROP TABLE Actividades
 create table Actividades(
 cod_act int primary key identity(1,1),
 nombre_act varchar(50),
-hora int,
+hora TIME,
 cod_profe int foreign key references Profesores(cod_profe)on delete cascade,
 cod_salon int foreign key references Salones(cod_salon) on delete cascade)
 --MOD
@@ -147,7 +147,7 @@ ALTER TABLE Actividades
 ADD cant_ins INT DEFAULT 0,
     estado VARCHAR(50);
 --Mostrar
-create PROCEDURE sp_MostrarAct
+CREATE PROCEDURE sp_MostrarAct
 AS 
 BEGIN
     SELECT A.cod_act, A.nombre_act, A.hora, A.cant_ins, A.estado, A.cod_profe, P.nombre_profe, A.cod_salon, S.nombre_salon 
@@ -158,7 +158,7 @@ END;
 --Alta
 create procedure sp_AgregarAct
 @nombre_act varchar(50),
-@hora int,
+@hora time,
 @cod_profe int,
 @cod_salon int
 as 
@@ -170,7 +170,7 @@ end
 CREATE PROCEDURE sp_ModificarAct
 @cod_act int,
 @nombre_act varchar(50),
-@hora int,
+@hora time,
 @cod_profe int,
 @cod_salon int
 AS 
@@ -208,6 +208,7 @@ BEGIN
     INNER JOIN Socios S ON I.cod_socio = S.cod_socio;
 END;
 --Alta
+/*
 create PROCEDURE sp_AgregarIns
     @cod_socio INT,
     @cod_act INT
@@ -230,7 +231,44 @@ BEGIN
         -- Ya existe una inscripción para el mismo socio y actividad, mostrar un mensaje indicando que no se puede realizar la inserción
         RAISERROR ('Ya existe una inscripción para este socio y actividad.', 16, 1);
     END
+END*/
+CREATE PROCEDURE sp_AgregarIns
+    @cod_socio INT,
+    @cod_act INT
+AS
+BEGIN
+    DECLARE @estado_socio VARCHAR(50);
+
+    -- Verificar si el estado del socio es BAJA
+    SELECT @estado_socio = estado FROM Socios WHERE cod_socio = @cod_socio;
+
+    IF @estado_socio <> 'BAJA'
+    BEGIN
+        -- Verificar si ya existe una inscripción para el mismo socio y actividad
+        IF NOT EXISTS (SELECT 1 FROM Inscripciones WHERE cod_socio = @cod_socio AND cod_act = @cod_act)
+        BEGIN
+            -- No existe una inscripción previa, proceder con la inserción
+            INSERT INTO Inscripciones (cod_socio, cod_act)
+            VALUES (@cod_socio, @cod_act);
+
+            -- Incrementar el valor de cant_ins en la tabla de Actividades
+            UPDATE Actividades
+            SET cant_ins = cant_ins + 1
+            WHERE cod_act = @cod_act;
+        END
+        ELSE
+        BEGIN
+            -- Ya existe una inscripción para el mismo socio y actividad, mostrar un mensaje indicando que no se puede realizar la inserción
+            RAISERROR ('Ya existe una inscripción para este socio y actividad.', 16, 1);
+        END
+    END
+    ELSE
+    BEGIN
+        -- El estado del socio es BAJA, mostrar un mensaje indicando que no se puede realizar la inscripción
+        RAISERROR ('El estado del socio es BAJA, no puede inscribirse.', 16, 1);
+    END
 END
+
 --Modificacion
 create procedure sp_ModificarIns
 @cod_ins int,

@@ -35,13 +35,13 @@ namespace CapaNegocio
             return table;
         }
 
-        public void insertAct(string Nombre, int Hora, int Profe, int Salon, string Estado)
+        public void insertAct(string Nombre, TimeSpan Hora, int Profe, int Salon, string Estado)
         {
             procedureAct.Insert(Nombre, Hora, Convert.ToInt32(Profe), Convert.ToInt32(Salon), Estado);
         }
-        public void updateAct(int Id, string Nombre, int Hora, int Profe, int Salon, int Cantidad, string Estado)
+        public void updateAct(int Id, string Nombre, TimeSpan Hora, int Profe, int Salon, int Cantidad, string Estado)
         {
-            procedureAct.Update(Convert.ToInt32(Id), Nombre, Convert.ToInt32(Hora), Convert.ToInt32(Profe), Convert.ToInt32(Salon), Convert.ToInt32(Cantidad), Estado);
+            procedureAct.Update(Convert.ToInt32(Id), Nombre, Hora, Convert.ToInt32(Profe), Convert.ToInt32(Salon), Convert.ToInt32(Cantidad), Estado);
         }
         public void deleteAct(int Id)
         {
