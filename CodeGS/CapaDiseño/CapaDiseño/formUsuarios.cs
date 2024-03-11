@@ -254,5 +254,17 @@ namespace CapaDiseño
                 row.Visible = true;
             }
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            txtDocumento.Clear();
+            txtNombre.Clear();
+            txtApellido.Clear();
+            txtClave.Clear();
+            txtConfirmarClave.Clear();
+            
+            txtId.Clear();
+
+        }
     }
 }
