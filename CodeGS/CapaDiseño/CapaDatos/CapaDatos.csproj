@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,6 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CapaDatos.cs" />
+    <Compile Include="Cd_Permiso.cs" />
+    <Compile Include="Cd_Rol.cs" />
+    <Compile Include="Cd_Usuario.cs" />
+    <Compile Include="Conexion.cs" />
+    <Compile Include="Permiso.cs" />
     <Compile Include="ProcedimientoActividades.cs" />
     <Compile Include="ProcedimientoInscripciones.cs" />
     <Compile Include="ProcedimientoPagos.cs" />
@@ -49,6 +55,8 @@
     <Compile Include="ProcedimientoSalones.cs" />
     <Compile Include="ProcedimientoSocios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rol.cs" />
+    <Compile Include="Usuario.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

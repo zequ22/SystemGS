@@ -28,98 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnSocios = new System.Windows.Forms.Button();
-            this.btnPagos = new System.Windows.Forms.Button();
-            this.btnInscripciones = new System.Windows.Forms.Button();
-            this.btnActividades = new System.Windows.Forms.Button();
-            this.btnProfesores = new System.Windows.Forms.Button();
-            this.btnSalones = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.menu = new System.Windows.Forms.MenuStrip();
+            this.menuUsuarios = new FontAwesome.Sharp.IconMenuItem();
+            this.menuReportes = new FontAwesome.Sharp.IconMenuItem();
+            this.menuSocios = new FontAwesome.Sharp.IconMenuItem();
+            this.menuPagos = new FontAwesome.Sharp.IconMenuItem();
+            this.menuInscripciones = new FontAwesome.Sharp.IconMenuItem();
+            this.menuActividades = new FontAwesome.Sharp.IconMenuItem();
+            this.menuProfesores = new FontAwesome.Sharp.IconMenuItem();
+            this.menuSalones = new FontAwesome.Sharp.IconMenuItem();
+            this.menuTitulo = new System.Windows.Forms.MenuStrip();
+            this.title = new System.Windows.Forms.Label();
+            this.contenedor = new System.Windows.Forms.Panel();
+            this.submenuRepSocios = new System.Windows.Forms.ToolStripMenuItem();
+            this.submenuRepActividades = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnSocios
-            // 
-            this.btnSocios.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btnSocios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSocios.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSocios.ForeColor = System.Drawing.Color.White;
-            this.btnSocios.Location = new System.Drawing.Point(12, 12);
-            this.btnSocios.Name = "btnSocios";
-            this.btnSocios.Size = new System.Drawing.Size(264, 23);
-            this.btnSocios.TabIndex = 0;
-            this.btnSocios.Text = "SOCIOS";
-            this.btnSocios.UseVisualStyleBackColor = false;
-            this.btnSocios.Click += new System.EventHandler(this.btnSocios_Click);
-            // 
-            // btnPagos
-            // 
-            this.btnPagos.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btnPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPagos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPagos.ForeColor = System.Drawing.Color.White;
-            this.btnPagos.Location = new System.Drawing.Point(12, 41);
-            this.btnPagos.Name = "btnPagos";
-            this.btnPagos.Size = new System.Drawing.Size(264, 23);
-            this.btnPagos.TabIndex = 1;
-            this.btnPagos.Text = "PAGOS";
-            this.btnPagos.UseVisualStyleBackColor = false;
-            this.btnPagos.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnInscripciones
-            // 
-            this.btnInscripciones.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btnInscripciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInscripciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInscripciones.ForeColor = System.Drawing.Color.White;
-            this.btnInscripciones.Location = new System.Drawing.Point(12, 70);
-            this.btnInscripciones.Name = "btnInscripciones";
-            this.btnInscripciones.Size = new System.Drawing.Size(264, 23);
-            this.btnInscripciones.TabIndex = 2;
-            this.btnInscripciones.Text = "INSCRIPCIONES";
-            this.btnInscripciones.UseVisualStyleBackColor = false;
-            this.btnInscripciones.Click += new System.EventHandler(this.btnInscripciones_Click);
-            // 
-            // btnActividades
-            // 
-            this.btnActividades.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btnActividades.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActividades.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActividades.ForeColor = System.Drawing.Color.White;
-            this.btnActividades.Location = new System.Drawing.Point(12, 99);
-            this.btnActividades.Name = "btnActividades";
-            this.btnActividades.Size = new System.Drawing.Size(264, 23);
-            this.btnActividades.TabIndex = 3;
-            this.btnActividades.Text = "ACTIVIDADES";
-            this.btnActividades.UseVisualStyleBackColor = false;
-            this.btnActividades.Click += new System.EventHandler(this.btnActividades_Click);
-            // 
-            // btnProfesores
-            // 
-            this.btnProfesores.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btnProfesores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProfesores.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProfesores.ForeColor = System.Drawing.Color.White;
-            this.btnProfesores.Location = new System.Drawing.Point(12, 128);
-            this.btnProfesores.Name = "btnProfesores";
-            this.btnProfesores.Size = new System.Drawing.Size(264, 23);
-            this.btnProfesores.TabIndex = 4;
-            this.btnProfesores.Text = "PROFESORES";
-            this.btnProfesores.UseVisualStyleBackColor = false;
-            this.btnProfesores.Click += new System.EventHandler(this.btnProfesores_Click);
-            // 
-            // btnSalones
-            // 
-            this.btnSalones.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btnSalones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalones.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalones.ForeColor = System.Drawing.Color.White;
-            this.btnSalones.Location = new System.Drawing.Point(12, 157);
-            this.btnSalones.Name = "btnSalones";
-            this.btnSalones.Size = new System.Drawing.Size(264, 23);
-            this.btnSalones.TabIndex = 5;
-            this.btnSalones.Text = "SALONES";
-            this.btnSalones.UseVisualStyleBackColor = false;
-            this.btnSalones.Click += new System.EventHandler(this.btnSalones_Click);
             // 
             // btnSalir
             // 
@@ -127,44 +54,270 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(12, 199);
+            this.btnSalir.Location = new System.Drawing.Point(857, 5);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(264, 23);
+            this.btnSalir.Size = new System.Drawing.Size(99, 54);
             this.btnSalir.TabIndex = 6;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(762, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 17);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Usuario: ";
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.Color.White;
+            this.lblUsuario.Location = new System.Drawing.Point(762, 33);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(81, 17);
+            this.lblUsuario.TabIndex = 8;
+            this.lblUsuario.Text = "lblUsuario";
+            // 
+            // menu
+            // 
+            this.menu.BackColor = System.Drawing.Color.White;
+            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuUsuarios,
+            this.menuReportes,
+            this.menuSocios,
+            this.menuPagos,
+            this.menuInscripciones,
+            this.menuActividades,
+            this.menuProfesores,
+            this.menuSalones});
+            this.menu.Location = new System.Drawing.Point(0, 62);
+            this.menu.Name = "menu";
+            this.menu.Size = new System.Drawing.Size(968, 77);
+            this.menu.TabIndex = 11;
+            this.menu.Text = "menuStrip1";
+            // 
+            // menuUsuarios
+            // 
+            this.menuUsuarios.BackColor = System.Drawing.Color.White;
+            this.menuUsuarios.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.menuUsuarios.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.menuUsuarios.IconColor = System.Drawing.Color.Black;
+            this.menuUsuarios.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuUsuarios.IconSize = 50;
+            this.menuUsuarios.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuUsuarios.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.menuUsuarios.Name = "menuUsuarios";
+            this.menuUsuarios.Size = new System.Drawing.Size(74, 73);
+            this.menuUsuarios.Text = "Usuarios";
+            this.menuUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuUsuarios.Click += new System.EventHandler(this.menuUsuarios_Click);
+            // 
+            // menuReportes
+            // 
+            this.menuReportes.BackColor = System.Drawing.Color.White;
+            this.menuReportes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.submenuRepSocios,
+            this.submenuRepActividades});
+            this.menuReportes.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.menuReportes.IconChar = FontAwesome.Sharp.IconChar.ChartSimple;
+            this.menuReportes.IconColor = System.Drawing.Color.Black;
+            this.menuReportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuReportes.IconSize = 50;
+            this.menuReportes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuReportes.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.menuReportes.Name = "menuReportes";
+            this.menuReportes.Size = new System.Drawing.Size(75, 73);
+            this.menuReportes.Text = "Reportes";
+            this.menuReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // menuSocios
+            // 
+            this.menuSocios.BackColor = System.Drawing.Color.White;
+            this.menuSocios.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.menuSocios.IconChar = FontAwesome.Sharp.IconChar.Running;
+            this.menuSocios.IconColor = System.Drawing.Color.Black;
+            this.menuSocios.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuSocios.IconSize = 50;
+            this.menuSocios.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuSocios.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.menuSocios.Name = "menuSocios";
+            this.menuSocios.Size = new System.Drawing.Size(62, 73);
+            this.menuSocios.Text = "Socios";
+            this.menuSocios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuSocios.Click += new System.EventHandler(this.menuSocios_Click);
+            // 
+            // menuPagos
+            // 
+            this.menuPagos.BackColor = System.Drawing.Color.White;
+            this.menuPagos.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.menuPagos.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckDollar;
+            this.menuPagos.IconColor = System.Drawing.Color.Black;
+            this.menuPagos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuPagos.IconSize = 50;
+            this.menuPagos.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuPagos.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.menuPagos.Name = "menuPagos";
+            this.menuPagos.Size = new System.Drawing.Size(62, 73);
+            this.menuPagos.Text = "Pagos";
+            this.menuPagos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuPagos.Click += new System.EventHandler(this.menuPagos_Click);
+            // 
+            // menuInscripciones
+            // 
+            this.menuInscripciones.BackColor = System.Drawing.Color.White;
+            this.menuInscripciones.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.menuInscripciones.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
+            this.menuInscripciones.IconColor = System.Drawing.Color.Black;
+            this.menuInscripciones.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuInscripciones.IconSize = 50;
+            this.menuInscripciones.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuInscripciones.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.menuInscripciones.Name = "menuInscripciones";
+            this.menuInscripciones.Size = new System.Drawing.Size(99, 73);
+            this.menuInscripciones.Text = "Inscripciones";
+            this.menuInscripciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuInscripciones.Click += new System.EventHandler(this.menuInscripciones_Click);
+            // 
+            // menuActividades
+            // 
+            this.menuActividades.BackColor = System.Drawing.Color.White;
+            this.menuActividades.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.menuActividades.IconChar = FontAwesome.Sharp.IconChar.Dumbbell;
+            this.menuActividades.IconColor = System.Drawing.Color.Black;
+            this.menuActividades.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuActividades.IconSize = 50;
+            this.menuActividades.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuActividades.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.menuActividades.Name = "menuActividades";
+            this.menuActividades.Size = new System.Drawing.Size(90, 73);
+            this.menuActividades.Text = "Actividades";
+            this.menuActividades.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuActividades.Click += new System.EventHandler(this.menuActividades_Click);
+            // 
+            // menuProfesores
+            // 
+            this.menuProfesores.BackColor = System.Drawing.Color.White;
+            this.menuProfesores.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.menuProfesores.IconChar = FontAwesome.Sharp.IconChar.UserPlus;
+            this.menuProfesores.IconColor = System.Drawing.Color.Black;
+            this.menuProfesores.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuProfesores.IconSize = 50;
+            this.menuProfesores.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuProfesores.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.menuProfesores.Name = "menuProfesores";
+            this.menuProfesores.Size = new System.Drawing.Size(85, 73);
+            this.menuProfesores.Text = "Profesores";
+            this.menuProfesores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuProfesores.Click += new System.EventHandler(this.menuProfesores_Click);
+            // 
+            // menuSalones
+            // 
+            this.menuSalones.BackColor = System.Drawing.Color.White;
+            this.menuSalones.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.menuSalones.IconChar = FontAwesome.Sharp.IconChar.HomeUser;
+            this.menuSalones.IconColor = System.Drawing.Color.Black;
+            this.menuSalones.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.menuSalones.IconSize = 50;
+            this.menuSalones.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuSalones.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.menuSalones.Name = "menuSalones";
+            this.menuSalones.Size = new System.Drawing.Size(67, 73);
+            this.menuSalones.Text = "Salones";
+            this.menuSalones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuSalones.Click += new System.EventHandler(this.menuSalones_Click);
+            // 
+            // menuTitulo
+            // 
+            this.menuTitulo.AutoSize = false;
+            this.menuTitulo.BackColor = System.Drawing.Color.Teal;
+            this.menuTitulo.Location = new System.Drawing.Point(0, 0);
+            this.menuTitulo.Name = "menuTitulo";
+            this.menuTitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.menuTitulo.Size = new System.Drawing.Size(968, 62);
+            this.menuTitulo.TabIndex = 12;
+            this.menuTitulo.Text = "menuTitulo";
+            // 
+            // title
+            // 
+            this.title.AutoSize = true;
+            this.title.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.ForeColor = System.Drawing.Color.White;
+            this.title.Location = new System.Drawing.Point(12, 9);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(154, 31);
+            this.title.TabIndex = 13;
+            this.title.Text = "GYM Stats";
+            // 
+            // contenedor
+            // 
+            this.contenedor.Location = new System.Drawing.Point(0, 142);
+            this.contenedor.Name = "contenedor";
+            this.contenedor.Size = new System.Drawing.Size(956, 474);
+            this.contenedor.TabIndex = 14;
+            // 
+            // submenuRepSocios
+            // 
+            this.submenuRepSocios.Name = "submenuRepSocios";
+            this.submenuRepSocios.Size = new System.Drawing.Size(199, 24);
+            this.submenuRepSocios.Text = "Reporte Socios";
+            this.submenuRepSocios.Click += new System.EventHandler(this.submenuRepSocios_Click);
+            // 
+            // submenuRepActividades
+            // 
+            this.submenuRepActividades.Name = "submenuRepActividades";
+            this.submenuRepActividades.Size = new System.Drawing.Size(199, 24);
+            this.submenuRepActividades.Text = "Reporte Actividades";
+            this.submenuRepActividades.Click += new System.EventHandler(this.submenuRepActividades_Click);
             // 
             // formInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(291, 234);
+            this.ClientSize = new System.Drawing.Size(968, 620);
+            this.Controls.Add(this.contenedor);
+            this.Controls.Add(this.title);
+            this.Controls.Add(this.lblUsuario);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.btnSalones);
-            this.Controls.Add(this.btnProfesores);
-            this.Controls.Add(this.btnActividades);
-            this.Controls.Add(this.btnInscripciones);
-            this.Controls.Add(this.btnPagos);
-            this.Controls.Add(this.btnSocios);
+            this.Controls.Add(this.menu);
+            this.Controls.Add(this.menuTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MainMenuStrip = this.menu;
             this.Name = "formInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GS";
             this.Load += new System.EventHandler(this.formInicio_Load);
+            this.menu.ResumeLayout(false);
+            this.menu.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnSocios;
-        private System.Windows.Forms.Button btnPagos;
-        private System.Windows.Forms.Button btnInscripciones;
-        private System.Windows.Forms.Button btnActividades;
-        private System.Windows.Forms.Button btnProfesores;
-        private System.Windows.Forms.Button btnSalones;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.MenuStrip menu;
+        private FontAwesome.Sharp.IconMenuItem menuUsuarios;
+        private FontAwesome.Sharp.IconMenuItem menuReportes;
+        private FontAwesome.Sharp.IconMenuItem menuSocios;
+        private FontAwesome.Sharp.IconMenuItem menuPagos;
+        private FontAwesome.Sharp.IconMenuItem menuInscripciones;
+        private FontAwesome.Sharp.IconMenuItem menuActividades;
+        private FontAwesome.Sharp.IconMenuItem menuProfesores;
+        private FontAwesome.Sharp.IconMenuItem menuSalones;
+        private System.Windows.Forms.MenuStrip menuTitulo;
+        private System.Windows.Forms.Label title;
+        private System.Windows.Forms.Panel contenedor;
+        private System.Windows.Forms.ToolStripMenuItem submenuRepSocios;
+        private System.Windows.Forms.ToolStripMenuItem submenuRepActividades;
     }
 }
