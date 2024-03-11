@@ -135,12 +135,13 @@ end
 
 
 --Actividades
+drop table Actividades
 create table Actividades(
 cod_act int primary key identity(1,1),
 nombre_act varchar(50),
 hora int,
-cod_profe int foreign key references Profesores(cod_profe),
-cod_salon int foreign key references Salones(cod_salon))
+cod_profe int foreign key references Profesores(cod_profe)on delete cascade,
+cod_salon int foreign key references Salones(cod_salon) on delete cascade)
 --MOD
 ALTER TABLE Actividades
 ADD cant_ins INT DEFAULT 0,
@@ -192,10 +193,11 @@ end
 
 
 --INSCRIPCIONES
+drop table Inscripciones
 create table Inscripciones(
 cod_ins int primary key identity(1,1),
-cod_socio int foreign key references Socios(cod_socio),
-cod_act int foreign key references Actividades(cod_act))
+cod_socio int foreign key references Socios(cod_socio)on delete cascade,
+cod_act int foreign key references Actividades(cod_act)on delete cascade)
 --Mostrar
 CREATE PROCEDURE sp_MostrarIns
 AS 

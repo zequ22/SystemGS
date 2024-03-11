@@ -12,7 +12,7 @@ using CapaNegocio;
 using FontAwesome.Sharp;
 
 namespace CapaDiseño
-{
+{   
     public partial class formInicio : Form
     {
         private static Usuario usuarioActual;
@@ -21,7 +21,7 @@ namespace CapaDiseño
         public formInicio(Usuario objusuario = null)
         {
             if (objusuario == null)
-              usuarioActual = new Usuario() { nombre_usuario = "admin", usuario_id = 5};
+              usuarioActual = new Usuario();
             else
             usuarioActual = objusuario;
             InitializeComponent();
