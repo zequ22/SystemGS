@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cn_Permiso.cs" />
+    <Compile Include="Cn_Reporte.cs" />
     <Compile Include="Cn_Rol.cs" />
     <Compile Include="Cn_Usuario.cs" />
     <Compile Include="ctrActividades.cs" />

@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="CapaDatos.cs" />
     <Compile Include="Cd_Permiso.cs" />
+    <Compile Include="Cd_Reporte.cs" />
     <Compile Include="Cd_Rol.cs" />
     <Compile Include="Cd_Usuario.cs" />
     <Compile Include="Conexion.cs" />
@@ -55,6 +56,8 @@
     <Compile Include="ProcedimientoSalones.cs" />
     <Compile Include="ProcedimientoSocios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteActividades.cs" />
+    <Compile Include="ReporteSocios.cs" />
     <Compile Include="Rol.cs" />
     <Compile Include="Usuario.cs" />
   </ItemGroup>
