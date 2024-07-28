@@ -90,9 +90,9 @@ namespace CapaDiseño
             if (dgvIns.SelectedRows.Count > 0)
             {
                 editar = true;
-                id = dgvIns.CurrentRow.Cells["cod_ins"].Value.ToString();
-                cmbSocio.SelectedValue = dgvIns.CurrentRow.Cells["cod_socio"].Value.ToString();
-                cmbAct.SelectedValue = dgvIns.CurrentRow.Cells["cod_act"].Value.ToString();
+                id = dgvIns.CurrentRow.Cells["INSCRIPCION"].Value.ToString();
+                cmbSocio.SelectedValue = dgvIns.CurrentRow.Cells["SOCIO"].Value.ToString();
+                cmbAct.SelectedValue = dgvIns.CurrentRow.Cells["ACTIVIDAD"].Value.ToString();
             }
             else
             {
@@ -104,7 +104,7 @@ namespace CapaDiseño
         {
             if (dgvIns.SelectedRows.Count > 0)
             {
-                id = dgvIns.CurrentRow.Cells["cod_ins"].Value.ToString();
+                id = dgvIns.CurrentRow.Cells["INSCRIPCION"].Value.ToString();
                 prI.Delete(Convert.ToInt32(id));
                 MessageBox.Show("La Inscripcion se ha eliminado correctamente!");
                 MostrarDatos();

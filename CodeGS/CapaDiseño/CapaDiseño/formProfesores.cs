@@ -70,13 +70,13 @@ namespace CapaDiseño
             if (dgvProfesores.SelectedRows.Count > 0)
             {
                 editar = true;
-                id = dgvProfesores.CurrentRow.Cells["cod_profe"].Value.ToString();
-                txtDoc.Text = dgvProfesores.CurrentRow.Cells["tipo_nro_doc"].Value.ToString();
-                txtNombre.Text = dgvProfesores.CurrentRow.Cells["nombre_profe"].Value.ToString();
-                txtApellido.Text = dgvProfesores.CurrentRow.Cells["apellido_profe"].Value.ToString();
-                txtNac.Text = dgvProfesores.CurrentRow.Cells["nacimiento"].Value.ToString();
-                txtTel.Text = dgvProfesores.CurrentRow.Cells["tel"].Value.ToString();
-                txtCargo.Text = dgvProfesores.CurrentRow.Cells["cargo"].Value.ToString();
+                id = dgvProfesores.CurrentRow.Cells["CODIGO"].Value.ToString();
+                txtDoc.Text = dgvProfesores.CurrentRow.Cells["DNI"].Value.ToString();
+                txtNombre.Text = dgvProfesores.CurrentRow.Cells["NOMBRE"].Value.ToString();
+                txtApellido.Text = dgvProfesores.CurrentRow.Cells["APELLIDO"].Value.ToString();
+                txtNac.Text = dgvProfesores.CurrentRow.Cells["NACIMIENTO"].Value.ToString();
+                txtTel.Text = dgvProfesores.CurrentRow.Cells["TEL"].Value.ToString();
+                txtCargo.Text = dgvProfesores.CurrentRow.Cells["CARGO"].Value.ToString();
             }
             else
             {
@@ -88,7 +88,7 @@ namespace CapaDiseño
         {
             if (dgvProfesores.SelectedRows.Count > 0)
             {
-                id = dgvProfesores.CurrentRow.Cells["cod_profe"].Value.ToString();
+                id = dgvProfesores.CurrentRow.Cells["CODIGO"].Value.ToString();
                 prP.Delete(Convert.ToInt32(id));
                 MessageBox.Show("El Profesor se ha eliminado correctamente!");
                 MostrarDatos();

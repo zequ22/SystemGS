@@ -78,11 +78,11 @@ namespace CapaDiseño
             if (dgvPagos.SelectedRows.Count > 0)
             {
                 editar = true;
-                id = dgvPagos.CurrentRow.Cells["cod_pago"].Value.ToString();
-                cmbSocios.SelectedValue = dgvPagos.CurrentRow.Cells["cod_socio"].Value.ToString();
-                txtFecha.Text = dgvPagos.CurrentRow.Cells["fecha"].Value.ToString();
-                txtPrecio.Text = dgvPagos.CurrentRow.Cells["precio"].Value.ToString();
-                txtEstado.Text = dgvPagos.CurrentRow.Cells["estado"].Value.ToString();
+                id = dgvPagos.CurrentRow.Cells["PAGO"].Value.ToString();
+                cmbSocios.SelectedValue = dgvPagos.CurrentRow.Cells["SOCIO"].Value.ToString();
+                txtFecha.Text = dgvPagos.CurrentRow.Cells["FECHA"].Value.ToString();
+                txtPrecio.Text = dgvPagos.CurrentRow.Cells["PRECIO"].Value.ToString();
+                txtEstado.Text = dgvPagos.CurrentRow.Cells["ESTADO"].Value.ToString();
             }
             else
             {
@@ -94,7 +94,7 @@ namespace CapaDiseño
         {
             if (dgvPagos.SelectedRows.Count > 0)
             {
-                id = dgvPagos.CurrentRow.Cells["cod_pago"].Value.ToString();
+                id = dgvPagos.CurrentRow.Cells["PAGO"].Value.ToString();
                 prP.Delete(Convert.ToInt32(id));
                 MessageBox.Show("El Pago se ha eliminado correctamente!");
                 MostrarDatos();

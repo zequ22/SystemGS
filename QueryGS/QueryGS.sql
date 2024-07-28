@@ -13,9 +13,11 @@ tel varchar(50),
 estado varchar(50))
 
 --Mostrar
+drop procedure sp_MostrarSocios
+
 create procedure sp_MostrarSocios
 as begin
-select cod_socio, apellido_soc, nombre_soc, tipo_nro_doc, estado, nacimiento, tel from Socios
+select cod_socio as SOCIO, apellido_soc as APELLIDO, nombre_soc as NOMBRE, tipo_nro_doc as DNI, estado as ESTADO, nacimiento as NACIMIENTO, tel as TEL from Socios
 order by apellido_soc, nombre_soc, tipo_nro_doc
 end
 --Alta
@@ -60,9 +62,11 @@ nacimiento date,
 tel varchar(50),
 cargo varchar(50))
 --Mostrar
+drop procedure sp_MostrarProfesores
+
 create procedure sp_MostrarProfesores
 as begin
-select cod_profe, apellido_profe, nombre_profe, tipo_nro_doc, cargo, nacimiento,tel from Profesores
+select cod_profe as CODIGO, apellido_profe as APELLIDO, nombre_profe as NOMBRE, tipo_nro_doc as DNI, cargo as CARGO, nacimiento as NACIMIENTO,tel as TEL from Profesores
 order by apellido_profe,nombre_profe,tipo_nro_doc
 end
 --Alta
@@ -104,9 +108,11 @@ nombre_salon varchar(50),
 capacidad int,
 descripcion varchar(50))
 --Mostrar
+DROP PROCEDURE sp_MostrarSalones
+
 create procedure sp_MostrarSalones
 as begin
-select * from Salones
+select cod_salon as CODIGO, nombre_salon as NOMBRE, capacidad as CAPACIDAD, descripcion as DESCRIPCION from Salones
 end
 --Alta
 create procedure sp_AgregarSalon
@@ -147,10 +153,12 @@ ALTER TABLE Actividades
 ADD cant_ins INT DEFAULT 0,
     estado VARCHAR(50);
 --Mostrar
+drop procedure sp_MostrarAct
+
 CREATE PROCEDURE sp_MostrarAct
 AS 
 BEGIN
-    SELECT A.cod_act, A.nombre_act, A.hora, A.cant_ins, A.estado, A.cod_profe, P.nombre_profe, A.cod_salon, S.nombre_salon 
+    SELECT A.cod_act as CODIGO, A.nombre_act as NOMBRE, A.hora as HORA, A.cant_ins as INSCRIPTOS, A.estado as ESTADO, A.cod_profe as COD_PROFE, P.nombre_profe as PROFESOR, A.cod_salon as COD_SALON, S.nombre_salon as SALON
     FROM Actividades A
     INNER JOIN Profesores P ON A.cod_profe = P.cod_profe
     INNER JOIN Salones S ON A.cod_salon = S.cod_salon;
@@ -199,10 +207,12 @@ cod_ins int primary key identity(1,1),
 cod_socio int foreign key references Socios(cod_socio)on delete cascade,
 cod_act int foreign key references Actividades(cod_act)on delete cascade)
 --Mostrar
+drop procedure sp_MostrarIns
+
 CREATE PROCEDURE sp_MostrarIns
 AS 
 BEGIN
-    SELECT I.cod_socio, S.apellido_soc, S.nombre_soc, I.cod_act, A.nombre_act, I.cod_ins 
+    SELECT I.cod_socio as SOCIO, S.apellido_soc as APELLIDO, S.nombre_soc as NOMBRE, I.cod_act as ACTIVIDAD, A.nombre_act as DESCRIPCION, I.cod_ins as INSCRIPCION
     FROM Inscripciones I
     INNER JOIN Actividades A ON I.cod_act = A.cod_act
     INNER JOIN Socios S ON I.cod_socio = S.cod_socio;
@@ -307,10 +317,12 @@ fecha date,
 precio int,
 estado varchar(50))
 --Mostrar
+drop procedure sp_MostrarPagos
+
 create PROCEDURE sp_MostrarPagos
 AS 
 BEGIN
-    SELECT P.fecha, P.cod_socio, S.apellido_soc, S.nombre_soc, S.tipo_nro_doc, P.estado, P.precio 
+    SELECT P.cod_pago as PAGO, P.fecha as FECHA, P.cod_socio as SOCIO, S.apellido_soc as APELLIDO, S.nombre_soc as NOMBRE, S.tipo_nro_doc as DNI, P.estado as ESTADO, P.precio as PRECIO
     FROM Pagos P
     INNER JOIN Socios S ON P.cod_socio = S.cod_socio
     ORDER BY P.fecha, S.apellido_soc, S.nombre_soc, S.tipo_nro_doc;
@@ -328,7 +340,7 @@ values (@cod_socio, @fecha, @precio, @estado)
 end
 --Modificacion
 create procedure sp_ModificarPago
-@cod_pago int,
+@cod_pago int as PAGO,
 @cod_socio int,
 @fecha date,
 @precio int,

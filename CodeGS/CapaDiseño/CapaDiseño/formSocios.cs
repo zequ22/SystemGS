@@ -79,13 +79,13 @@ namespace CapaDiseño
             if(dgvSocios.SelectedRows.Count > 0)
             {
                 editar = true;
-                id = dgvSocios.CurrentRow.Cells["cod_socio"].Value.ToString();
-                txtDoc.Text = dgvSocios.CurrentRow.Cells["tipo_nro_doc"].Value.ToString();
-                txtNombre.Text = dgvSocios.CurrentRow.Cells["nombre_soc"].Value.ToString();
-                txtApellido.Text = dgvSocios.CurrentRow.Cells["apellido_soc"].Value.ToString();
-                txtNac.Text = dgvSocios.CurrentRow.Cells["nacimiento"].Value.ToString();
-                txtTel.Text = dgvSocios.CurrentRow.Cells["tel"].Value.ToString();
-                txtEstado.Text = dgvSocios.CurrentRow.Cells["estado"].Value.ToString();
+                id = dgvSocios.CurrentRow.Cells["SOCIO"].Value.ToString();
+                txtDoc.Text = dgvSocios.CurrentRow.Cells["DNI"].Value.ToString();
+                txtNombre.Text = dgvSocios.CurrentRow.Cells["NOMBRE"].Value.ToString();
+                txtApellido.Text = dgvSocios.CurrentRow.Cells["APELLIDO"].Value.ToString();
+                txtNac.Text = dgvSocios.CurrentRow.Cells["NACIMIENTO"].Value.ToString();
+                txtTel.Text = dgvSocios.CurrentRow.Cells["TEL"].Value.ToString();
+                txtEstado.Text = dgvSocios.CurrentRow.Cells["ESTADO"].Value.ToString();
             }
             else
             {
@@ -97,7 +97,7 @@ namespace CapaDiseño
         {
             if(dgvSocios.SelectedRows.Count > 0)
             {
-                id = dgvSocios.CurrentRow.Cells["cod_socio"].Value.ToString();
+                id = dgvSocios.CurrentRow.Cells["SOCIO"].Value.ToString();
                 prS.Delete(Convert.ToInt32(id));
                 MessageBox.Show("El socio se ha eliminado correctamente!");
                 MostrarDatos();

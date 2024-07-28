@@ -51,7 +51,7 @@ namespace CapaDiseño
             ProcedimientoActividades obj = new ProcedimientoActividades();
             cmbSalones.DataSource = obj.llenar_salones();
             cmbSalones.DisplayMember = "nombre_salon";
-            cmbSalones.ValueMember = "cod_salon";
+            cmbSalones.ValueMember = "CODIGO";
         }
 
         public void MostrarDatos()
@@ -96,13 +96,13 @@ namespace CapaDiseño
             if (dgvAct.SelectedRows.Count > 0)
             {
                 editar = true;
-                id = dgvAct.CurrentRow.Cells["cod_act"].Value.ToString();
-                txtNombre.Text = dgvAct.CurrentRow.Cells["nombre_act"].Value.ToString();
-                txtHora.Text = dgvAct.CurrentRow.Cells["hora"].Value.ToString();
-                cmbProfe.SelectedValue = dgvAct.CurrentRow.Cells["cod_profe"].Value.ToString();
-                cmbSalones.SelectedValue = dgvAct.CurrentRow.Cells["cod_salon"].Value.ToString();
-                txtCantIns.Text = dgvAct.CurrentRow.Cells["cant_ins"].Value.ToString();
-                txtEstado.Text = dgvAct.CurrentRow.Cells["estado"].Value.ToString();
+                id = dgvAct.CurrentRow.Cells["CODIGO"].Value.ToString();
+                txtNombre.Text = dgvAct.CurrentRow.Cells["NOMBRE"].Value.ToString();
+                txtHora.Text = dgvAct.CurrentRow.Cells["HORA"].Value.ToString();
+                cmbProfe.SelectedValue = dgvAct.CurrentRow.Cells["COD_PROFE"].Value.ToString();
+                cmbSalones.SelectedValue = dgvAct.CurrentRow.Cells["COD_SALON"].Value.ToString();
+                txtCantIns.Text = dgvAct.CurrentRow.Cells["INSCRIPTOS"].Value.ToString();
+                txtEstado.Text = dgvAct.CurrentRow.Cells["ESTADO"].Value.ToString();
             }
             else
             {
@@ -114,7 +114,7 @@ namespace CapaDiseño
         {
             if (dgvAct.SelectedRows.Count > 0)
             {
-                id = dgvAct.CurrentRow.Cells["cod_act"].Value.ToString();
+                id = dgvAct.CurrentRow.Cells["CODIGO"].Value.ToString();
                 prA.Delete(Convert.ToInt32(id));
                 MessageBox.Show("La Actividad se ha eliminado correctamente!");
                 MostrarDatos();

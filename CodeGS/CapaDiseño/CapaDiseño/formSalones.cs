@@ -70,10 +70,10 @@ namespace CapaDiseño
             if (dgvSalones.SelectedRows.Count > 0)
             {
                 editar = true;
-                id = dgvSalones.CurrentRow.Cells["cod_salon"].Value.ToString();
-                txtNombre.Text = dgvSalones.CurrentRow.Cells["nombre_salon"].Value.ToString();
-                txtCapacidad.Text = dgvSalones.CurrentRow.Cells["capacidad"].Value.ToString();
-                txtDescripcion.Text = dgvSalones.CurrentRow.Cells["descripcion"].Value.ToString();
+                id = dgvSalones.CurrentRow.Cells["CODIGO"].Value.ToString();
+                txtNombre.Text = dgvSalones.CurrentRow.Cells["NOMBRE"].Value.ToString();
+                txtCapacidad.Text = dgvSalones.CurrentRow.Cells["CAPACIDAD"].Value.ToString();
+                txtDescripcion.Text = dgvSalones.CurrentRow.Cells["DESCRIPCION"].Value.ToString();
             }
             else
             {
@@ -85,7 +85,7 @@ namespace CapaDiseño
         {
             if (dgvSalones.SelectedRows.Count > 0)
             {
-                id = dgvSalones.CurrentRow.Cells["cod_salon"].Value.ToString();
+                id = dgvSalones.CurrentRow.Cells["CODIGO"].Value.ToString();
                 prS.Delete(Convert.ToInt32(id));
                 MessageBox.Show("El Salon se ha eliminado correctamente!");
                 MostrarDatos();
