@@ -81,6 +81,87 @@ begin
     where Pagos.cod_pago in (select cod_pago from inserted);
 end;
 
+--SPs
+create procedure sp_MostrarCuotas
+as
+begin
+    select cod_cuota as CODIGO, mes_cuota as MES, anio_cuota as ANIO, precio_cuota as PRECIO from Cuotas;
+end;
+--ALTA
+create procedure sp_AltaCuota
+    @cod_cuota int,
+    @mes_cuota varchar(50),
+    @anio_cuota int,
+    @precio_cuota decimal
+as
+begin
+    insert into Cuotas (cod_cuota, mes_cuota, anio_cuota, precio_cuota)
+    values (@cod_cuota, @mes_cuota, @anio_cuota, @precio_cuota);
+end;
+--MOD
+create procedure sp_ModificarCuota
+    @cod_cuota int,
+    @mes_cuota varchar(50),
+    @anio_cuota int,
+    @precio_cuota decimal
+as
+begin
+    update Cuotas
+    set mes_cuota = @mes_cuota,
+        anio_cuota = @anio_cuota,
+        precio_cuota = @precio_cuota
+    where cod_cuota = @cod_cuota;
+end;
+--BAJA
+create procedure sp_BajaCuota
+    @cod_cuota int
+as
+begin
+    delete from Cuotas
+    where cod_cuota = @cod_cuota;
+end;
+
+--MOSTRAR
+create procedure sp_MostrarPagos
+as
+begin
+    select cod_pago AS PAGO, cod_cuota as CUOTA, cod_socio as SOCIO, fecha_pago as FECHA, precio_pago as PRECIO from Pagos;
+end;
+--ALTA
+create procedure sp_AltaPago
+    @cod_socio int,
+    @cod_cuota int,
+    @fecha_pago date
+as
+begin
+    insert into Pagos (cod_socio, cod_cuota, fecha_pago)
+    values (@cod_socio, @cod_cuota, @fecha_pago);
+end;
+--MOD
+create procedure sp_ModificarPago
+    @cod_pago int,
+    @cod_socio int,
+    @cod_cuota int,
+    @fecha_pago date
+as
+begin
+    update Pagos
+    set cod_socio = @cod_socio,
+        cod_cuota = @cod_cuota,
+        fecha_pago = @fecha_pago
+    where cod_pago = @cod_pago;
+end;
+--BAJA
+create procedure sp_BajaPago
+    @cod_pago int
+as
+begin
+    delete from Pagos
+    where cod_pago = @cod_pago;
+end;
+
+
+
 
 --PRUEBA
 select * from Socios
