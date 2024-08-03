@@ -46,6 +46,7 @@
     <Compile Include="Cn_Rol.cs" />
     <Compile Include="Cn_Usuario.cs" />
     <Compile Include="ctrActividades.cs" />
+    <Compile Include="ctrCuotas.cs" />
     <Compile Include="ctrInscripciones.cs" />
     <Compile Include="ctrPagos.cs" />
     <Compile Include="ctrSalones.cs" />

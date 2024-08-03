@@ -139,3 +139,4 @@ C:\Users\alder\Escritorio\diplo\SystemGS\CodeGS\CapaDiseño\CapaDiseño\obj\Debu
 C:\Users\alder\Escritorio\diplo\SystemGS\CodeGS\CapaDiseño\CapaDiseño\obj\Debug\CapaDiseño.csproj.CopyComplete
 C:\Users\alder\Escritorio\diplo\SystemGS\CodeGS\CapaDiseño\CapaDiseño\obj\Debug\CapaDiseño.exe
 C:\Users\alder\Escritorio\diplo\SystemGS\CodeGS\CapaDiseño\CapaDiseño\obj\Debug\CapaDiseño.pdb
+C:\Users\alder\Escritorio\diplo\SystemGS\CodeGS\CapaDiseño\CapaDiseño\obj\Debug\CapaDiseño.formCuotas.resources

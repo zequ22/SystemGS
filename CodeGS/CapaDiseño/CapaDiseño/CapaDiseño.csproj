@@ -133,6 +133,12 @@
     <Compile Include="formActividades.Designer.cs">
       <DependentUpon>formActividades.cs</DependentUpon>
     </Compile>
+    <Compile Include="formCuotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formCuotas.Designer.cs">
+      <DependentUpon>formCuotas.cs</DependentUpon>
+    </Compile>
     <Compile Include="formInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +210,9 @@
     <Compile Include="Utilidades\opcionCombo.cs" />
     <EmbeddedResource Include="formActividades.resx">
       <DependentUpon>formActividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formCuotas.resx">
+      <DependentUpon>formCuotas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formInicio.resx">
       <DependentUpon>formInicio.cs</DependentUpon>

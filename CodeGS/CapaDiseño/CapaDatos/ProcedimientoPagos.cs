@@ -40,31 +40,42 @@ namespace CapaDatos
             return table;
         }
 
+        public DataTable llenar_cuotas()
+        {
+            cmd.Connection = conexion.Abrir();
+            cmd.CommandText = "SELECT cod_cuota, mes_cuota, anio_cuota FROM Cuotas";
+            cmd.CommandType = CommandType.Text;
+            leer = cmd.ExecuteReader();
+            table.Load(leer);
+            conexion.Cerrar();
+            return table;
+        }
+
         //Alta
-        public void Insert(int Socio, DateTime Fecha, int Precio, string Estado)
+        public void Insert(int Socio, int Cuota, int Precio, DateTime Fecha)
         {
             cmd.Connection = conexion.Abrir();
             cmd.CommandText = "sp_AgregarPago";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@cod_socio", Socio);
-            cmd.Parameters.AddWithValue("@fecha", Fecha);
+            cmd.Parameters.AddWithValue("@cod_cuota", Cuota);
             cmd.Parameters.AddWithValue("@precio", Precio);
-            cmd.Parameters.AddWithValue("@estado", Estado);
+            cmd.Parameters.AddWithValue("@fecha", Fecha);
             cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
         }
 
         //Modificar
-        public void Update(int Id, int Socio, DateTime Fecha, int Precio, string Estado)
+        public void Update(int Id, int Socio, int Cuota, int Precio, DateTime Fecha)
         {
             cmd.Connection = conexion.Abrir();
             cmd.CommandText = "sp_ModificarPago";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@cod_pago", Id);
             cmd.Parameters.AddWithValue("@cod_soc", Socio);
-            cmd.Parameters.AddWithValue("@fecha", Fecha);
+            cmd.Parameters.AddWithValue("@cod_cuota", Cuota);
             cmd.Parameters.AddWithValue("@precio", Precio);
-            cmd.Parameters.AddWithValue("@estado", Estado);
+            cmd.Parameters.AddWithValue("@fecha", Fecha);
             cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
         }

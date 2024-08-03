@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.txtFecha = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtFecha = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCod = new System.Windows.Forms.TextBox();
@@ -44,15 +43,16 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.cmbCuota = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPagos)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtEstado
+            // txtFecha
             // 
-            this.txtEstado.Location = new System.Drawing.Point(439, 26);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(100, 20);
-            this.txtEstado.TabIndex = 76;
+            this.txtFecha.Location = new System.Drawing.Point(439, 26);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(100, 20);
+            this.txtFecha.TabIndex = 76;
             // 
             // label7
             // 
@@ -61,14 +61,15 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(436, 10);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 13);
+            this.label7.Size = new System.Drawing.Size(46, 13);
             this.label7.TabIndex = 75;
-            this.label7.Text = "Estado:";
+            this.label7.Text = "Fecha:";
             // 
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(333, 26);
             this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.ReadOnly = true;
             this.txtPrecio.Size = new System.Drawing.Size(100, 20);
             this.txtPrecio.TabIndex = 74;
             // 
@@ -83,13 +84,6 @@
             this.label8.TabIndex = 73;
             this.label8.Text = "Precio:";
             // 
-            // txtFecha
-            // 
-            this.txtFecha.Location = new System.Drawing.Point(121, 24);
-            this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(100, 20);
-            this.txtFecha.TabIndex = 70;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -97,9 +91,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(118, 8);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 13);
+            this.label4.Size = new System.Drawing.Size(44, 13);
             this.label4.TabIndex = 69;
-            this.label4.Text = "Fecha:";
+            this.label4.Text = "Cuota:";
             // 
             // label2
             // 
@@ -217,23 +211,32 @@
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
             // 
+            // cmbCuota
+            // 
+            this.cmbCuota.FormattingEnabled = true;
+            this.cmbCuota.Location = new System.Drawing.Point(121, 25);
+            this.cmbCuota.Name = "cmbCuota";
+            this.cmbCuota.Size = new System.Drawing.Size(100, 21);
+            this.cmbCuota.TabIndex = 83;
+            this.cmbCuota.SelectedIndexChanged += new System.EventHandler(this.cmbCuota_SelectedIndexChanged);
+            // 
             // formPagos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(698, 325);
+            this.Controls.Add(this.cmbCuota);
             this.Controls.Add(this.cmbSocios);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.txtFecha);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtFecha);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCod);
@@ -251,11 +254,10 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCod;
@@ -267,5 +269,6 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.ComboBox cmbCuota;
     }
 }

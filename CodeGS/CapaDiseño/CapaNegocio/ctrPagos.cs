@@ -20,19 +20,25 @@ namespace CapaNegocio
             table = procedurePag.mostrar();
             return table;
         }
+        public DataTable listar_cuotas()
+        {
+            DataTable table = new DataTable();
+            table = procedurePag.llenar_cuotas();
+            return table;
+        }
         public DataTable listar_socios()
         {
             DataTable table = new DataTable();
             table = procedurePag.llenar_socios();
             return table;
         }
-        public void insertPago(int Socio, DateTime Fecha, int Precio, string Estado)
+        public void insertPago(int Socio, int Cuota, int Precio, DateTime Fecha)
         {
-            procedurePag.Insert(Convert.ToInt32(Socio), Fecha, Convert.ToInt32(Precio), Estado);
+            procedurePag.Insert(Convert.ToInt32(Socio), Cuota, Convert.ToInt32(Precio), Fecha);
         }
-        public void updatePago(int Id, int Socio, DateTime Fecha, int Precio, string Estado)
+        public void updatePago(int Id, int Socio, int Cuota, int Precio, DateTime Fecha)
         {
-            procedurePag.Update(Convert.ToInt32(Id), Convert.ToInt32(Socio), Fecha, Convert.ToInt32(Precio), Estado);
+            procedurePag.Update(Convert.ToInt32(Id), Convert.ToInt32(Socio), Convert.ToInt32(Cuota), Convert.ToInt32(Precio), Fecha);
         }
         public void deletePago(int Id)
         {

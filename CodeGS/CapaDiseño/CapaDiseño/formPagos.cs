@@ -26,6 +26,7 @@ namespace CapaDiseño
         private void formPagos_Load(object sender, EventArgs e)
         {
             MostrarDatos();
+            MostrarCuotas();
             MostrarSocios();
         }
 
@@ -33,6 +34,13 @@ namespace CapaDiseño
         {
             ProcedimientoPagos obj = new ProcedimientoPagos();
             dgvPagos.DataSource = obj.mostrar();
+        }
+        public void MostrarCuotas()
+        {
+            ProcedimientoPagos obj = new ProcedimientoPagos();
+            cmbCuota.DataSource = obj.llenar_cuotas();
+            cmbCuota.DisplayMember = "mes_cuota";
+            cmbCuota.ValueMember = "cod_cuota";
         }
         public void MostrarSocios()
         {
@@ -48,7 +56,7 @@ namespace CapaDiseño
             {
                 try
                 {
-                    prP.Insert(Convert.ToInt32(cmbSocios.SelectedValue), Convert.ToDateTime(txtFecha.Text), Convert.ToInt32(txtPrecio.Text), txtEstado.Text);
+                    prP.Insert(Convert.ToInt32(cmbSocios.SelectedValue), Convert.ToInt32(cmbCuota.SelectedValue), Convert.ToInt32(txtPrecio.Text), Convert.ToDateTime(txtFecha.Text));
                     MessageBox.Show("Se agrego Pago con exito!");
                     MostrarDatos();
                 }
@@ -61,7 +69,7 @@ namespace CapaDiseño
             {
                 try
                 {
-                    prP.Update(Convert.ToInt32(id), Convert.ToInt32(cmbSocios.SelectedValue), Convert.ToDateTime(txtFecha.Text), Convert.ToInt32(txtPrecio.Text), txtEstado.Text);
+                    prP.Update(Convert.ToInt32(id), Convert.ToInt32(cmbCuota.SelectedValue), Convert.ToInt32(cmbSocios.SelectedValue), Convert.ToInt32(txtPrecio.Text), Convert.ToDateTime(txtFecha.Text));
                     MessageBox.Show("Datos modificados con exito!");
                     MostrarDatos();
                     editar = false;
@@ -80,9 +88,9 @@ namespace CapaDiseño
                 editar = true;
                 id = dgvPagos.CurrentRow.Cells["PAGO"].Value.ToString();
                 cmbSocios.SelectedValue = dgvPagos.CurrentRow.Cells["SOCIO"].Value.ToString();
-                txtFecha.Text = dgvPagos.CurrentRow.Cells["FECHA"].Value.ToString();
+                txtFecha.Text = dgvPagos.CurrentRow.Cells["CUOTA"].Value.ToString();
                 txtPrecio.Text = dgvPagos.CurrentRow.Cells["PRECIO"].Value.ToString();
-                txtEstado.Text = dgvPagos.CurrentRow.Cells["ESTADO"].Value.ToString();
+                txtFecha.Text = dgvPagos.CurrentRow.Cells["FECHA"].Value.ToString();
             }
             else
             {
@@ -108,6 +116,11 @@ namespace CapaDiseño
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void cmbCuota_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
