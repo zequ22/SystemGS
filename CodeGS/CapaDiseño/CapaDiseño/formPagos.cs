@@ -129,5 +129,25 @@ namespace CapaDiseño
             txtFecha.Clear();
             txtPrecio.Clear();
         }
+
+        private void btnFiltro_Click(object sender, EventArgs e)
+        {
+            if (cmbSocios.SelectedIndex != -1)
+            {
+                string tipoDocumento = cmbSocios.Text; // Obtener el tipo de documento seleccionado
+                FiltrarPorDocumento(tipoDocumento);
+            }
+        }
+        private void FiltrarPorDocumento(string tipoDocumento)
+        {
+            ProcedimientoPagos obj = new ProcedimientoPagos();
+            DataTable tablaFiltrada = obj.FiltrarPagosPorDocumento(tipoDocumento);
+            dgvPagos.DataSource = tablaFiltrada;
+        }
+
+        private void btnTodos_Click(object sender, EventArgs e)
+        {
+            MostrarDatos();
+        }
     }
 }

@@ -187,6 +187,27 @@ begin
 end;
 
 
+--FILTRO
+CREATE PROCEDURE sp_FiltrarPagosPorDocumento
+    @tipo_nro_doc VARCHAR(50)
+AS
+BEGIN
+    SELECT 
+        P.cod_pago AS PAGO, 
+        P.cod_cuota AS CUOTA, 
+        P.cod_socio AS SOCIO, 
+        P.fecha_pago AS FECHA, 
+        P.precio_pago AS PRECIO,
+        S.tipo_nro_doc,
+        S.nombre_soc,
+        S.apellido_soc
+    FROM 
+        Pagos P
+    JOIN 
+        Socios S ON P.cod_socio = S.cod_socio
+    WHERE 
+        S.tipo_nro_doc = @tipo_nro_doc;
+END;
 
 
 --PRUEBA

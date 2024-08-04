@@ -44,6 +44,8 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.cmbCuota = new System.Windows.Forms.ComboBox();
+            this.btnFiltro = new System.Windows.Forms.Button();
+            this.btnTodos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPagos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -221,12 +223,42 @@
             this.cmbCuota.TabIndex = 83;
             this.cmbCuota.SelectedIndexChanged += new System.EventHandler(this.cmbCuota_SelectedIndexChanged);
             // 
+            // btnFiltro
+            // 
+            this.btnFiltro.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnFiltro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltro.ForeColor = System.Drawing.Color.White;
+            this.btnFiltro.Location = new System.Drawing.Point(545, 23);
+            this.btnFiltro.Name = "btnFiltro";
+            this.btnFiltro.Size = new System.Drawing.Size(65, 23);
+            this.btnFiltro.TabIndex = 84;
+            this.btnFiltro.Text = "Filtrar";
+            this.btnFiltro.UseVisualStyleBackColor = false;
+            this.btnFiltro.Click += new System.EventHandler(this.btnFiltro_Click);
+            // 
+            // btnTodos
+            // 
+            this.btnTodos.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnTodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTodos.ForeColor = System.Drawing.Color.White;
+            this.btnTodos.Location = new System.Drawing.Point(616, 23);
+            this.btnTodos.Name = "btnTodos";
+            this.btnTodos.Size = new System.Drawing.Size(65, 23);
+            this.btnTodos.TabIndex = 85;
+            this.btnTodos.Text = "Todos";
+            this.btnTodos.UseVisualStyleBackColor = false;
+            this.btnTodos.Click += new System.EventHandler(this.btnTodos_Click);
+            // 
             // formPagos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(698, 325);
+            this.Controls.Add(this.btnTodos);
+            this.Controls.Add(this.btnFiltro);
             this.Controls.Add(this.cmbCuota);
             this.Controls.Add(this.cmbSocios);
             this.Controls.Add(this.btnLimpiar);
@@ -271,5 +303,7 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.ComboBox cmbCuota;
+        private System.Windows.Forms.Button btnFiltro;
+        private System.Windows.Forms.Button btnTodos;
     }
 }

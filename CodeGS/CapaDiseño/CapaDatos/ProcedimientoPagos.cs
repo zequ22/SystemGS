@@ -89,5 +89,21 @@ namespace CapaDatos
             cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
         }
+
+        //FILTRO
+        public DataTable FiltrarPagosPorDocumento(string tipoDocumento)
+        {
+            DataTable tablaFiltrada = new DataTable();
+            cmd.Connection = conexion.Abrir();
+            cmd.CommandText = "sp_FiltrarPagosPorDocumento";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@tipo_nro_doc", tipoDocumento);
+            leer = cmd.ExecuteReader();
+            tablaFiltrada.Load(leer);
+            conexion.Cerrar();
+            cmd.Parameters.Clear();
+            return tablaFiltrada;
+        }
+
     }
 }
