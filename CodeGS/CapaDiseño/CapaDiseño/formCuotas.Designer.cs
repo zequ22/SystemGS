@@ -119,7 +119,6 @@
             // 
             this.txtPrecio.Location = new System.Drawing.Point(330, 29);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.ReadOnly = true;
             this.txtPrecio.Size = new System.Drawing.Size(100, 20);
             this.txtPrecio.TabIndex = 90;
             // 
@@ -160,7 +159,6 @@
             // 
             this.txtCod.Location = new System.Drawing.Point(12, 28);
             this.txtCod.Name = "txtCod";
-            this.txtCod.ReadOnly = true;
             this.txtCod.Size = new System.Drawing.Size(100, 20);
             this.txtCod.TabIndex = 86;
             // 
@@ -188,7 +186,6 @@
             // 
             this.txtMes.Location = new System.Drawing.Point(118, 29);
             this.txtMes.Name = "txtMes";
-            this.txtMes.ReadOnly = true;
             this.txtMes.Size = new System.Drawing.Size(100, 20);
             this.txtMes.TabIndex = 98;
             // 
@@ -196,7 +193,6 @@
             // 
             this.txtAnio.Location = new System.Drawing.Point(224, 29);
             this.txtAnio.Name = "txtAnio";
-            this.txtAnio.ReadOnly = true;
             this.txtAnio.Size = new System.Drawing.Size(100, 20);
             this.txtAnio.TabIndex = 99;
             // 

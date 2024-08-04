@@ -34,12 +34,13 @@ namespace CapaNegocio
         }
         public void insertPago(int Socio, int Cuota, int Precio, DateTime Fecha)
         {
-            procedurePag.Insert(Convert.ToInt32(Socio), Cuota, Convert.ToInt32(Precio), Fecha);
+            procedurePag.Insert(Convert.ToInt32(Socio), Cuota, Fecha);
         }
-        public void updatePago(int Id, int Socio, int Cuota, int Precio, DateTime Fecha)
+        public void updatePago(int Id, int Socio, int Cuota, DateTime Fecha)
         {
-            procedurePag.Update(Convert.ToInt32(Id), Convert.ToInt32(Socio), Convert.ToInt32(Cuota), Convert.ToInt32(Precio), Fecha);
+            procedurePag.Update(Id, Socio, Cuota, Fecha);
         }
+
         public void deletePago(int Id)
         {
             procedurePag.Delete(Convert.ToInt32(Id));

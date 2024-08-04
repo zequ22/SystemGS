@@ -52,33 +52,32 @@ namespace CapaDatos
         }
 
         //Alta
-        public void Insert(int Socio, int Cuota, int Precio, DateTime Fecha)
+        public void Insert(int Socio, int Cuota, DateTime Fecha)
         {
             cmd.Connection = conexion.Abrir();
-            cmd.CommandText = "sp_AgregarPago";
+            cmd.CommandText = "sp_AltaPago";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@cod_socio", Socio);
             cmd.Parameters.AddWithValue("@cod_cuota", Cuota);
-            cmd.Parameters.AddWithValue("@precio", Precio);
-            cmd.Parameters.AddWithValue("@fecha", Fecha);
+            cmd.Parameters.AddWithValue("@fecha_pago", Fecha);
             cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
         }
 
         //Modificar
-        public void Update(int Id, int Socio, int Cuota, int Precio, DateTime Fecha)
+        public void Update(int Id, int Socio, int Cuota, DateTime Fecha)
         {
             cmd.Connection = conexion.Abrir();
             cmd.CommandText = "sp_ModificarPago";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@cod_pago", Id);
-            cmd.Parameters.AddWithValue("@cod_soc", Socio);
+            cmd.Parameters.AddWithValue("@cod_socio", Socio);
             cmd.Parameters.AddWithValue("@cod_cuota", Cuota);
-            cmd.Parameters.AddWithValue("@precio", Precio);
-            cmd.Parameters.AddWithValue("@fecha", Fecha);
+            cmd.Parameters.AddWithValue("@fecha_pago", Fecha);
             cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
         }
+
 
         //Baja
         public void Delete(int Id)

@@ -33,7 +33,7 @@ namespace CapaDatos
         public void Insert(int Cuota, string Mes, string Anio, int Precio)
         {
             cmd.Connection = conexion.Abrir();
-            cmd.CommandText = "sp_AgregarCuota";
+            cmd.CommandText = "sp_AltaCuota";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@cod_cuota", Cuota);
             cmd.Parameters.AddWithValue("@mes_cuota", Mes);

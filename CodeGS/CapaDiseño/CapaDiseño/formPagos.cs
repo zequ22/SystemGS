@@ -56,7 +56,7 @@ namespace CapaDiseño
             {
                 try
                 {
-                    prP.Insert(Convert.ToInt32(cmbSocios.SelectedValue), Convert.ToInt32(cmbCuota.SelectedValue), Convert.ToInt32(txtPrecio.Text), Convert.ToDateTime(txtFecha.Text));
+                    prP.Insert(Convert.ToInt32(cmbSocios.SelectedValue), Convert.ToInt32(cmbCuota.SelectedValue), Convert.ToDateTime(txtFecha.Text));
                     MessageBox.Show("Se agrego Pago con exito!");
                     MostrarDatos();
                 }
@@ -69,7 +69,7 @@ namespace CapaDiseño
             {
                 try
                 {
-                    prP.Update(Convert.ToInt32(id), Convert.ToInt32(cmbCuota.SelectedValue), Convert.ToInt32(cmbSocios.SelectedValue), Convert.ToInt32(txtPrecio.Text), Convert.ToDateTime(txtFecha.Text));
+                    prP.Update(Convert.ToInt32(id), Convert.ToInt32(cmbSocios.SelectedValue), Convert.ToInt32(cmbCuota.SelectedValue), Convert.ToDateTime(txtFecha.Text));
                     MessageBox.Show("Datos modificados con exito!");
                     MostrarDatos();
                     editar = false;
@@ -121,6 +121,13 @@ namespace CapaDiseño
         private void cmbCuota_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtCod.Clear();
+            txtFecha.Clear();
+            txtPrecio.Clear();
         }
     }
 }

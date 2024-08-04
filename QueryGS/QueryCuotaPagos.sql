@@ -58,6 +58,9 @@ create table Cuotas (
     anio_cuota int,
     precio_cuota decimal)
 
+alter table Cuotas
+alter column precio_cuota int
+
 -- PAGOS
 create table Pagos (
     cod_pago int primary key identity(1,1),
@@ -67,6 +70,9 @@ create table Pagos (
     precio_pago decimal,
     foreign key (cod_socio) references Socios(cod_socio),
     foreign key (cod_cuota) references Cuotas(cod_cuota))
+
+alter table Pagos
+alter column precio_pago int
 
 --TRIGGER
 create trigger trg_set_precio_pago
@@ -122,11 +128,31 @@ begin
 end;
 
 --MOSTRAR
-create procedure sp_MostrarPagos
+drop procedure sp_MostrarPagos
+/*create procedure sp_MostrarPagos
 as
 begin
     select cod_pago AS PAGO, cod_cuota as CUOTA, cod_socio as SOCIO, fecha_pago as FECHA, precio_pago as PRECIO from Pagos;
-end;
+end;*/
+
+CREATE PROCEDURE sp_MostrarPagos
+AS
+BEGIN
+    SELECT 
+        P.cod_pago AS PAGO, 
+        P.cod_cuota AS CUOTA, 
+        P.cod_socio AS SOCIO,
+        S.nombre_soc AS NOMBRE,
+        S.apellido_soc AS APELLIDO,
+        P.fecha_pago AS FECHA, 
+        P.precio_pago AS PRECIO,
+        S.tipo_nro_doc AS DNI
+    FROM 
+        Pagos P
+    JOIN 
+        Socios S ON P.cod_socio = S.cod_socio;
+END;
+
 --ALTA
 create procedure sp_AltaPago
     @cod_socio int,

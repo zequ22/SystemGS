@@ -71,7 +71,7 @@ namespace CapaDiseño
             if (dgvCuotas.SelectedRows.Count > 0)
             {
                 editar = true;
-                id = dgvCuotas.CurrentRow.Cells["CUOTA"].Value.ToString();
+                id = dgvCuotas.CurrentRow.Cells["CODIGO"].Value.ToString();
                 txtMes.Text = dgvCuotas.CurrentRow.Cells["MES"].Value.ToString();
                 txtAnio.Text = dgvCuotas.CurrentRow.Cells["ANIO"].Value.ToString();
                 txtPrecio.Text = dgvCuotas.CurrentRow.Cells["PRECIO"].Value.ToString();
@@ -86,7 +86,7 @@ namespace CapaDiseño
         {
             if (dgvCuotas.SelectedRows.Count > 0)
             {
-                id = dgvCuotas.CurrentRow.Cells["CUOTA"].Value.ToString();
+                id = dgvCuotas.CurrentRow.Cells["CODIGO"].Value.ToString();
                 prC.Delete(Convert.ToInt32(id));
                 MessageBox.Show("La Cuota se ha eliminado correctamente!");
                 MostrarDatos();
