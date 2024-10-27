@@ -11,7 +11,7 @@ namespace CapaDatos
     public class CapaDatos
     {
         //Cadena de conexion
-        private SqlConnection Conexion = new SqlConnection("Data Source=EZE-ASUS\\SQLEXPRESS;Initial Catalog=GSDB;Integrated Security=true");
+        private SqlConnection Conexion = new SqlConnection("Data Source=CQE14\\SQLEXPRESS;Initial Catalog=GSDB;Integrated Security=true");
 
         //Abrir conexion
         public SqlConnection Abrir()

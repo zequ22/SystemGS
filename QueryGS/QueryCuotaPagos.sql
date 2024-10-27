@@ -56,10 +56,8 @@ create table Cuotas (
     cod_cuota int primary key,
     mes_cuota varchar(50),
     anio_cuota int,
-    precio_cuota decimal)
+    precio_cuota int)
 
-alter table Cuotas
-alter column precio_cuota int
 
 -- PAGOS
 create table Pagos (
@@ -154,6 +152,8 @@ BEGIN
 END;
 
 --ALTA
+drop procedure sp_AltaPago
+
 create procedure sp_AltaPago
     @cod_socio int,
     @cod_cuota int,
@@ -164,6 +164,8 @@ begin
     values (@cod_socio, @cod_cuota, @fecha_pago);
 end;
 --MOD
+drop procedure sp_ModificarPago
+
 create procedure sp_ModificarPago
     @cod_pago int,
     @cod_socio int,
@@ -178,6 +180,8 @@ begin
     where cod_pago = @cod_pago;
 end;
 --BAJA
+drop procedure sp_BajaPago
+
 create procedure sp_BajaPago
     @cod_pago int
 as
@@ -218,3 +222,6 @@ select * from Pagos
 insert into Cuotas (cod_cuota, mes_cuota, anio_cuota, precio_cuota) values (082024,'agosto',2024,21500)
 
 insert into Pagos (cod_socio, cod_cuota, fecha_pago) values (1,082024,'2/8/2024')
+
+insert into Pagos (cod_socio, cod_cuota, fecha_pago) 
+values (1, 82024, '2024-08-02');

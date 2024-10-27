@@ -15,6 +15,10 @@ BEGIN
                  END;
 END;
 */
+
+/*
+MODELO ANTERIOR - MODELO ANTERIOR - MODELO ANTERIOR - MODELO ANTERIOR - MODELO ANTERIOR - MODELO ANTERIOR - MODELO ANTERIOR - MODELO ANTERIOR - MODELO ANTERIOR - 
+
 CREATE PROCEDURE sp_ActualizarEstadoSocios
 AS
 BEGIN
@@ -28,7 +32,23 @@ BEGIN
                     THEN 'BAJA'
                     ELSE 'ACTIVO'
                  END;
+END;*/
+CREATE PROCEDURE sp_ActualizarEstadoSocios
+AS
+BEGIN
+    UPDATE Socios
+    SET estado = CASE
+                    WHEN EXISTS (SELECT 1 FROM Pagos WHERE Pagos.cod_socio = Socios.cod_socio AND Pagos.fecha_pago > DATEADD(DAY, 30, GETDATE()))
+                    THEN 'DEUDOR'
+                    WHEN NOT EXISTS (SELECT 1 FROM Pagos WHERE Pagos.cod_socio = Socios.cod_socio)
+                    THEN 'DEUDOR'
+                    WHEN DATEDIFF(DAY, (SELECT MAX(fecha_pago) FROM Pagos WHERE Pagos.cod_socio = Socios.cod_socio), GETDATE()) > 60
+                    THEN 'BAJA'
+                    ELSE 'ACTIVO'
+                 END;
 END;
+
+drop procedure sp_ActualizarEstadoSocios
 
 
 --ESTADO ACTIVIDAD

@@ -340,7 +340,7 @@ values (@cod_socio, @fecha, @precio, @estado)
 end
 --Modificacion
 create procedure sp_ModificarPago
-@cod_pago int as PAGO,
+@cod_pago int,
 @cod_socio int,
 @fecha date,
 @precio int,

@@ -1,0 +1,639 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB6FF28F-CF00-49C1-AF16-DF626BB80E9F}|CapaDatos\\CapaDatos.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadatos\\procedimientopagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB6FF28F-CF00-49C1-AF16-DF626BB80E9F}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\procedimientopagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB6FF28F-CF00-49C1-AF16-DF626BB80E9F}|CapaDatos\\CapaDatos.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadatos\\capadatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB6FF28F-CF00-49C1-AF16-DF626BB80E9F}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\capadatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|CapaDise\u00F1o||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|c:\\users\\ezequiel\\desktop\\diploma\\systemgs\\codegs\\capadise\u00F1o\\capadise\u00F1o\\formreporteactividades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formreporteactividades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB6FF28F-CF00-49C1-AF16-DF626BB80E9F}|CapaDatos\\CapaDatos.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadatos\\procedimientosocios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB6FF28F-CF00-49C1-AF16-DF626BB80E9F}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\procedimientosocios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FB700EA-1754-41CD-A910-58F17E43B21E}|CapaNegocio\\CapaNegocio.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capanegocio\\ctrsocios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FB700EA-1754-41CD-A910-58F17E43B21E}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\ctrsocios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formsocios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formsocios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formsocios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formsocios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formpagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formpagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formpagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formpagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FB700EA-1754-41CD-A910-58F17E43B21E}|CapaNegocio\\CapaNegocio.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capanegocio\\ctrpagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FB700EA-1754-41CD-A910-58F17E43B21E}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\ctrpagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formcuotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formcuotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB6FF28F-CF00-49C1-AF16-DF626BB80E9F}|CapaDatos\\CapaDatos.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadatos\\procedimientocuotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB6FF28F-CF00-49C1-AF16-DF626BB80E9F}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\procedimientocuotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formcuotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formcuotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FB700EA-1754-41CD-A910-58F17E43B21E}|CapaNegocio\\CapaNegocio.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capanegocio\\ctrcuotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FB700EA-1754-41CD-A910-58F17E43B21E}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\ctrcuotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FB700EA-1754-41CD-A910-58F17E43B21E}|CapaNegocio\\CapaNegocio.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capanegocio\\cn_reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FB700EA-1754-41CD-A910-58F17E43B21E}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\cn_reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formsalones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formsalones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formactividades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formactividades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\forminscripciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\forminscripciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formprofesores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formprofesores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formactividades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formactividades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\forminscripciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\forminscripciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formprofesores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formprofesores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formsalones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formsalones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB6FF28F-CF00-49C1-AF16-DF626BB80E9F}|CapaDatos\\CapaDatos.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadatos\\cd_reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB6FF28F-CF00-49C1-AF16-DF626BB80E9F}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cd_reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formreportesocios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formreportesocios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formreportesocios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formreportesocios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formreportesocios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formreportesocios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\formreporteactividades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\formreporteactividades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB6FF28F-CF00-49C1-AF16-DF626BB80E9F}|CapaDatos\\CapaDatos.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadatos\\reporteactividades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB6FF28F-CF00-49C1-AF16-DF626BB80E9F}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\reporteactividades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\capadise\u00F1o\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|c:\\users\\ezequiel\\desktop\\diploma\\systemgs\\codegs\\capadise\u00F1o\\capadise\u00F1o\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{A78917E4-0F70-46F7-821F-6A98DF4588F6}|CapaDise\u00F1o\\CapaDise\u00F1o.csproj|solutionrelative:capadise\u00F1o\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ctrSocios.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaNegocio\\ctrSocios.cs",
+              "RelativeDocumentMoniker": "CapaNegocio\\ctrSocios.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaNegocio\\ctrSocios.cs",
+              "RelativeToolTip": "CapaNegocio\\ctrSocios.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T19:12:45.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\Program.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\Program.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\Program.cs",
+              "RelativeToolTip": "CapaDise\u00F1o\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T19:12:45.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\App.config",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\App.config",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\App.config",
+              "RelativeToolTip": "CapaDise\u00F1o\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-10-27T19:12:45.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProcedimientoPagos.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDatos\\ProcedimientoPagos.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\ProcedimientoPagos.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDatos\\ProcedimientoPagos.cs",
+              "RelativeToolTip": "CapaDatos\\ProcedimientoPagos.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAwGkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T19:12:45.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProcedimientoSocios.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDatos\\ProcedimientoSocios.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\ProcedimientoSocios.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDatos\\ProcedimientoSocios.cs",
+              "RelativeToolTip": "CapaDatos\\ProcedimientoSocios.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T19:12:45.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CapaDise\u00F1o",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\CapaDise\u00F1o.csproj",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\CapaDise\u00F1o.csproj",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\CapaDise\u00F1o.csproj",
+              "RelativeToolTip": "CapaDise\u00F1o\\CapaDise\u00F1o.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-03T23:44:18.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CapaDatos.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDatos\\CapaDatos.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\CapaDatos.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDatos\\CapaDatos.cs",
+              "RelativeToolTip": "CapaDatos\\CapaDatos.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAawA0AAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T19:12:45.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "formReporteActividades.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formReporteActividades.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formReporteActividades.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formReporteActividades.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaDise\u00F1o\\formReporteActividades.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T19:12:45.468Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "formReportes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formReportes.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formReportes.cs",
+              "ToolTip": "C:\\Users\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formReportes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formReportes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "formPagos.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formPagos.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formPagos.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formPagos.cs",
+              "RelativeToolTip": "CapaDise\u00F1o\\formPagos.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAAAJUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "formCuotas.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formCuotas.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formCuotas.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formCuotas.cs",
+              "RelativeToolTip": "CapaDise\u00F1o\\formCuotas.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAgwFgAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "formSocios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formSocios.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formSocios.cs",
+              "ToolTip": "C:\\Users\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formSocios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formSocios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "formSocios.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formSocios.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formSocios.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formSocios.cs",
+              "RelativeToolTip": "CapaDise\u00F1o\\formSocios.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAAwIUAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "formPagos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formPagos.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formPagos.cs",
+              "ToolTip": "C:\\Users\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formPagos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formPagos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ctrPagos.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaNegocio\\ctrPagos.cs",
+              "RelativeDocumentMoniker": "CapaNegocio\\ctrPagos.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaNegocio\\ctrPagos.cs",
+              "RelativeToolTip": "CapaNegocio\\ctrPagos.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAqwCkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T19:12:45.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProcedimientoCuotas.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDatos\\ProcedimientoCuotas.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\ProcedimientoCuotas.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDatos\\ProcedimientoCuotas.cs",
+              "RelativeToolTip": "CapaDatos\\ProcedimientoCuotas.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwCMAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T19:12:45.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "formCuotas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formCuotas.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formCuotas.cs",
+              "ToolTip": "C:\\Users\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formCuotas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formCuotas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "formInicio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formInicio.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formInicio.cs",
+              "ToolTip": "C:\\Users\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formInicio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formInicio.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "formLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formLogin.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formLogin.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formLogin.cs",
+              "RelativeToolTip": "CapaDise\u00F1o\\formLogin.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "formLogin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formLogin.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formLogin.cs",
+              "ToolTip": "C:\\Users\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formLogin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formLogin.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ctrCuotas.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaNegocio\\ctrCuotas.cs",
+              "RelativeDocumentMoniker": "CapaNegocio\\ctrCuotas.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaNegocio\\ctrCuotas.cs",
+              "RelativeToolTip": "CapaNegocio\\ctrCuotas.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAA1wCAAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T19:12:45.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Cn_Reporte.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaNegocio\\Cn_Reporte.cs",
+              "RelativeDocumentMoniker": "CapaNegocio\\Cn_Reporte.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaNegocio\\Cn_Reporte.cs",
+              "RelativeToolTip": "CapaNegocio\\Cn_Reporte.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T19:12:45.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "formActividades.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formActividades.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formActividades.cs",
+              "ToolTip": "C:\\Users\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formActividades.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formActividades.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "formSalones.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formSalones.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formSalones.cs",
+              "ToolTip": "C:\\Users\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formSalones.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formSalones.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "formInscripciones.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formInscripciones.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formInscripciones.cs",
+              "ToolTip": "C:\\Users\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formInscripciones.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formInscripciones.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "formProfesores.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formProfesores.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formProfesores.cs",
+              "ToolTip": "C:\\Users\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formProfesores.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formProfesores.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "formUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formUsuarios.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formUsuarios.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formUsuarios.cs",
+              "RelativeToolTip": "CapaDise\u00F1o\\formUsuarios.cs",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "formUsuarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formUsuarios.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formUsuarios.cs",
+              "ToolTip": "C:\\Users\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formUsuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formUsuarios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "formInscripciones.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formInscripciones.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formInscripciones.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formInscripciones.cs",
+              "RelativeToolTip": "CapaDise\u00F1o\\formInscripciones.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAlwGoAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "formProfesores.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formProfesores.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formProfesores.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formProfesores.cs",
+              "RelativeToolTip": "CapaDise\u00F1o\\formProfesores.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAEwFoAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "formActividades.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formActividades.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formActividades.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formActividades.cs",
+              "RelativeToolTip": "CapaDise\u00F1o\\formActividades.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAEwHQAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "formSalones.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formSalones.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formSalones.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formSalones.cs",
+              "RelativeToolTip": "CapaDise\u00F1o\\formSalones.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAMwFkAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "formReporteSocios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formReporteSocios.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formReporteSocios.cs",
+              "ToolTip": "C:\\Users\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formReporteSocios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\alder\\Escritorio\\diplo\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formReporteSocios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Cd_Reporte.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDatos\\Cd_Reporte.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\Cd_Reporte.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDatos\\Cd_Reporte.cs",
+              "RelativeToolTip": "CapaDatos\\Cd_Reporte.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAowFAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T19:12:45.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "formReporteActividades.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formReporteActividades.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formReporteActividades.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formReporteActividades.cs",
+              "RelativeToolTip": "CapaDise\u00F1o\\formReporteActividades.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T19:12:45.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "formReporteSocios.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formReporteSocios.Designer.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formReporteSocios.Designer.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formReporteSocios.Designer.cs",
+              "RelativeToolTip": "CapaDise\u00F1o\\formReporteSocios.Designer.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowCEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2024-10-27T19:12:45.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "formReporteSocios.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formReporteSocios.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formReporteSocios.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formReporteSocios.cs",
+              "RelativeToolTip": "CapaDise\u00F1o\\formReporteSocios.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwE0AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ReporteActividades.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDatos\\ReporteActividades.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\ReporteActividades.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDatos\\ReporteActividades.cs",
+              "RelativeToolTip": "CapaDatos\\ReporteActividades.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T19:12:45.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "formInicio.cs",
+              "DocumentMoniker": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formInicio.cs",
+              "RelativeDocumentMoniker": "CapaDise\u00F1o\\formInicio.cs",
+              "ToolTip": "C:\\Users\\Ezequiel\\Desktop\\diploma\\SystemGS\\CodeGS\\CapaDise\u00F1o\\CapaDise\u00F1o\\formInicio.cs",
+              "RelativeToolTip": "CapaDise\u00F1o\\formInicio.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAqwHEAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-10-27T19:12:45.539Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
