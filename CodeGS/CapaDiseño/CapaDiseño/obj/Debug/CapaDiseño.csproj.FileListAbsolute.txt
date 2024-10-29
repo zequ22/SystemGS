@@ -187,3 +187,4 @@ C:\Users\Ezequiel\Desktop\diploma\SystemGS\CodeGS\CapaDiseño\CapaDiseño\obj\De
 C:\Users\Ezequiel\Desktop\diploma\SystemGS\CodeGS\CapaDiseño\CapaDiseño\obj\Debug\CapaDiseño.csproj.Up2Date
 C:\Users\Ezequiel\Desktop\diploma\SystemGS\CodeGS\CapaDiseño\CapaDiseño\obj\Debug\CapaDiseño.exe
 C:\Users\Ezequiel\Desktop\diploma\SystemGS\CodeGS\CapaDiseño\CapaDiseño\obj\Debug\CapaDiseño.pdb
+C:\Users\Ezequiel\Desktop\diploma\SystemGS\CodeGS\CapaDiseño\CapaDiseño\obj\Debug\CapaDiseño.formGestion.resources

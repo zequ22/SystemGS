@@ -51,6 +51,7 @@
     <Compile Include="Permiso.cs" />
     <Compile Include="ProcedimientoActividades.cs" />
     <Compile Include="ProcedimientoCuotas.cs" />
+    <Compile Include="ProcedimientoGestion.cs" />
     <Compile Include="ProcedimientoInscripciones.cs" />
     <Compile Include="ProcedimientoPagos.cs" />
     <Compile Include="ProcedimientoProfesores.cs" />

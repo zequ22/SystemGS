@@ -27,7 +27,6 @@ rol_id int references ROL(rol_id),
 nombre_menu varchar(100),
 permiso_fechaAlta datetime default getdate()
 )
-
 select * from PERMISO
 -- Muestar los permisos que tiene el usuario
 select p.rol_id, p.nombre_menu from PERMISO p
@@ -35,6 +34,10 @@ inner join ROL r on r.rol_id = p.rol_id
 inner join USUARIO u on u.rol_id = r.rol_id
 where u.usuario_id = 1
 
+
+insert into PERMISO (rol_id, nombre_menu)
+values 
+(4, 'menuCuotas')
 
 insert into PERMISO (rol_id, nombre_menu)
 values 

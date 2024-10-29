@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ using CapaNegocio;
 using FontAwesome.Sharp;
 
 namespace CapaDiseño
-{   
+{
     public partial class formInicio : Form
     {
         private static Usuario usuarioActual;
@@ -21,9 +22,9 @@ namespace CapaDiseño
         public formInicio(Usuario objusuario = null)
         {
             if (objusuario == null)
-              usuarioActual = new Usuario();
+                usuarioActual = new Usuario();
             else
-            usuarioActual = objusuario;
+                usuarioActual = objusuario;
             InitializeComponent();
         }
 
